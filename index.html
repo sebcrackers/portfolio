@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Betsegaw Gobezie — Amazon Listing Designer & A+ Content Specialist</title>
+<meta name="description" content="High-converting Amazon listing images, A+ content and brand story design. 100% Seller Central approval rate, 48–72h turnaround. Available on Upwork.">
+<meta property="og:title" content="Betsegaw Gobezie — Amazon Listing Designer">
+<meta property="og:description" content="Amazon visuals engineered for compliance & conversion. Zero rejections. 48–72h delivery.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23E8853A'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-size='38' font-style='italic' text-anchor='middle' fill='%2308080A'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  :root {
+    --bg: #08080A;
+    --bg-2: #0E0E12;
+    --bg-3: #141419;
+    --bg-card: #0F0F13;
+    --fg: #F5F3EF;
+    --fg-2: #E8E5DD;
+    --muted: #8A8780;
+    --muted-2: #5A5852;
+    --accent: #E8853A;
+    --accent-soft: #FFB870;
+    --accent-deep: #B85A1A;
+    --accent-glow: rgba(232, 133, 58, 0.4);
+    --green: #4ADE80;
+    --line: rgba(245, 243, 239, 0.06);
+    --line-2: rgba(245, 243, 239, 0.12);
+    --line-3: rgba(245, 243, 239, 0.2);
+    --glass: rgba(245, 243, 239, 0.02);
+  }
+
+  * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  section[id] { scroll-margin-top: 110px; }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    cursor: none;
+  }
+
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+    opacity: 0.06; pointer-events: none; z-index: 100; mix-blend-mode: overlay;
+  }
+
+  h1, h2, h3, .display { font-family: 'Fraunces', serif; font-variation-settings: "opsz" 144, "SOFT" 50; letter-spacing: -0.03em; font-weight: 400; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  ::selection { background: var(--accent); color: var(--bg); }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: #2A2A30; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+  /* ---------- Preloader ---------- */
+  .preloader {
+    position: fixed; inset: 0; background: var(--bg); z-index: 600;
+    display: flex; align-items: center; justify-content: center;
+    transition: opacity .7s ease, visibility .7s ease;
+  }
+  .preloader.done { opacity: 0; visibility: hidden; pointer-events: none; }
+  .preloader-inner { text-align: center; }
+  .preloader-name {
+    font-family: 'Fraunces', serif; font-size: clamp(28px, 5vw, 52px);
+    letter-spacing: -0.03em; margin-bottom: 30px;
+  }
+  .preloader-name em { font-style: italic; font-weight: 300; color: var(--accent); }
+  .preloader-bar { width: 160px; height: 1px; background: var(--line-2); margin: 0 auto; overflow: hidden; }
+  .preloader-bar span { display: block; height: 100%; background: var(--accent); transform: translateX(-100%); animation: load 1s .1s cubic-bezier(.16,1,.3,1) forwards; }
+  @keyframes load { to { transform: translateX(0); } }
+
+  /* ---------- Custom cursor ---------- */
+  .cursor-ring {
+    position: fixed; width: 36px; height: 36px; border: 1px solid var(--line-3); border-radius: 50%;
+    pointer-events: none; z-index: 9999; mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s, border-color .3s, background .3s;
+  }
+  .cursor-dot {
+    position: fixed; width: 4px; height: 4px; background: var(--accent); border-radius: 50%;
+    pointer-events: none; z-index: 9999; transform: translate(-50%, -50%);
+  }
+  .cursor-ring.hover { width: 64px; height: 64px; border-color: var(--accent); background: rgba(232,133,58,.06); }
+  .cursor-ring.hover-text::after {
+    content: attr(data-text); position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 600; color: var(--accent);
+    letter-spacing: .06em; text-transform: uppercase; mix-blend-mode: normal;
+  }
+  @media (hover: none), (max-width: 768px) {
+    body { cursor: auto; }
+    .cursor-ring, .cursor-dot { display: none; }
+  }
+
+  /* ---------- Scroll progress ---------- */
+  .scroll-progress { position: fixed; top: 0; left: 0; height: 2px; background: linear-gradient(90deg, var(--accent-deep), var(--accent)); z-index: 200; width: 0; }
+
+  /* ---------- Nav ---------- */
+  .nav {
+    position: fixed; top: 20px; left: 50%; transform: translateX(-50%); z-index: 80;
+    width: calc(100% - 40px); max-width: 1320px;
+    backdrop-filter: blur(24px) saturate(180%);
+    background: rgba(8, 8, 10, 0.6); border: 1px solid var(--line); border-radius: 14px;
+    padding: 14px 22px; display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-logo {
+    font-family: 'Fraunces', serif; font-weight: 500; font-size: 26px; letter-spacing: -0.02em;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .nav-logo em, .footer-logo em { font-style: italic; font-weight: 300; color: var(--accent); font-variation-settings: 'opsz' 144, 'SOFT' 100; }
+  .nav-links { display: flex; gap: 30px; align-items: center; }
+  .nav-links a { color: var(--muted); font-size: 13px; font-weight: 500; text-decoration: none; transition: color .3s; position: relative; }
+  .nav-links a:hover { color: var(--fg); }
+  .nav-links a::after { content: ''; position: absolute; left: 0; bottom: -4px; width: 0; height: 1px; background: var(--accent); transition: width .3s; }
+  .nav-links a:hover::after { width: 100%; }
+  .nav-right { display: flex; align-items: center; gap: 14px; }
+  .nav-cta {
+    background: var(--fg); color: var(--bg); padding: 10px 18px; border-radius: 10px;
+    font-size: 13px; font-weight: 600; text-decoration: none; transition: all .3s;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .nav-cta:hover { background: var(--accent); transform: translateY(-1px); box-shadow: 0 10px 30px var(--accent-glow); }
+  .nav-burger {
+    display: none; background: none; border: 1px solid var(--line-2); color: var(--fg);
+    width: 40px; height: 40px; border-radius: 10px; font-size: 15px; align-items: center; justify-content: center;
+  }
+  .mobile-menu {
+    position: fixed; top: 88px; left: 20px; right: 20px; z-index: 79;
+    background: rgba(10,10,14,.96); backdrop-filter: blur(24px);
+    border: 1px solid var(--line-2); border-radius: 16px; padding: 12px;
+    display: none; flex-direction: column;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a { padding: 14px 16px; color: var(--fg-2); text-decoration: none; border-radius: 10px; font-size: 15px; font-weight: 500; }
+  .mobile-menu a:hover { background: var(--glass); color: var(--accent); }
+
+  /* ---------- Hero ---------- */
+  .hero { min-height: 100vh; padding: 140px 40px 80px; position: relative; overflow: hidden; display: flex; align-items: center; }
+  .hero-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+  .blob { position: absolute; border-radius: 50%; filter: blur(140px); opacity: 0.45; }
+  .blob-1 { width: 700px; height: 700px; background: var(--accent); top: -250px; right: -150px; animation: drift-1 24s infinite ease-in-out; }
+  .blob-2 { width: 500px; height: 500px; background: #5A2D0E; bottom: -150px; left: -100px; animation: drift-2 30s infinite ease-in-out; opacity: 0.6; }
+  @keyframes drift-1 { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(-80px,60px) scale(1.1); } }
+  @keyframes drift-2 { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(60px,-40px) scale(.95); } }
+  .grid-overlay {
+    position: absolute; inset: 0;
+    background-image: linear-gradient(rgba(245,243,239,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(245,243,239,.025) 1px, transparent 1px);
+    background-size: 100px 100px;
+    mask-image: radial-gradient(ellipse 80% 60% at center, black 20%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at center, black 20%, transparent 75%);
+  }
+  .hero-container { max-width: 1320px; margin: 0 auto; width: 100%; position: relative; z-index: 2; }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 10px; padding: 6px 14px 6px 8px;
+    background: rgba(232,133,58,.08); border: 1px solid rgba(232,133,58,.2); border-radius: 999px;
+    color: var(--accent-soft); font-size: 11px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase;
+    margin-bottom: 36px; font-family: 'JetBrains Mono', monospace;
+  }
+  .hero-eyebrow .dot { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 8px var(--accent); animation: pulse-status 2s infinite; }
+  @keyframes pulse-status { 0%,100% { opacity: 1; } 50% { opacity: .4; } }
+  .hero h1 { font-size: clamp(44px, 7.2vw, 108px); font-weight: 400; line-height: .96; letter-spacing: -.045em; margin-bottom: 36px; max-width: 1100px; }
+  .hero h1 .italic-accent { font-style: italic; font-weight: 300; color: var(--accent); font-variation-settings: "opsz" 144, "SOFT" 100; }
+  .hero h1 .line { display: block; overflow: hidden; }
+  .hero h1 .line-inner { display: inline-block; transform: translateY(110%); animation: line-up 1s cubic-bezier(.16,1,.3,1) forwards; }
+  .hero h1 .line:nth-child(1) .line-inner { animation-delay: .85s; }
+  .hero h1 .line:nth-child(2) .line-inner { animation-delay: .95s; }
+  .hero h1 .line:nth-child(3) .line-inner { animation-delay: 1.05s; }
+  @keyframes line-up { to { transform: translateY(0); } }
+  .hero-sub { font-size: 18px; line-height: 1.6; color: var(--fg-2); margin-bottom: 44px; max-width: 540px; opacity: 0; animation: fade-in 1s 1.3s forwards; }
+  @keyframes fade-in { to { opacity: 1; } }
+  .cta-row { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 64px; opacity: 0; animation: fade-in 1s 1.45s forwards; }
+
+  .btn-primary {
+    background: var(--accent); color: var(--bg); padding: 16px 28px; border-radius: 12px;
+    font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px;
+    transition: all .3s cubic-bezier(.4,0,.2,1); border: none; position: relative; overflow: hidden;
+  }
+  .btn-primary::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,.25), transparent); transform: translateX(-100%); transition: transform .6s; }
+  .btn-primary:hover::before { transform: translateX(100%); }
+  .btn-primary:hover { background: var(--accent-soft); box-shadow: 0 16px 40px var(--accent-glow); }
+  .btn-ghost {
+    background: transparent; color: var(--fg); padding: 16px 28px; border-radius: 12px;
+    font-weight: 500; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px;
+    border: 1px solid var(--line-2); transition: all .3s;
+  }
+  .btn-ghost:hover { border-color: var(--fg); background: var(--glass); }
+
+  .trust-row { display: flex; gap: 40px; flex-wrap: wrap; padding-top: 36px; border-top: 1px solid var(--line); opacity: 0; animation: fade-in 1s 1.6s forwards; }
+  .trust-item { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--muted); font-family: 'JetBrains Mono', monospace; letter-spacing: .04em; }
+  .trust-item .icon { width: 16px; height: 16px; color: var(--accent); }
+
+  .hero-preview { position: absolute; right: 40px; top: 50%; transform: translateY(-50%); width: 280px; z-index: 3; opacity: 0; animation: fade-in 1.4s 1.7s forwards; }
+  .hero-preview-card {
+    background: linear-gradient(180deg, rgba(20,20,25,.95), rgba(15,15,19,.95));
+    border: 1px solid var(--line-2); border-radius: 18px; overflow: hidden; backdrop-filter: blur(20px);
+    box-shadow: 0 30px 80px rgba(0,0,0,.6); transform: rotate(3deg); transition: transform .4s; text-decoration: none; display: block;
+  }
+  .hero-preview-card:hover { transform: rotate(0deg) translateY(-6px); }
+  .hero-preview-img { aspect-ratio: 1; background: #1A1A1F; position: relative; overflow: hidden; }
+  .hero-preview-img img { width: 100%; height: 100%; object-fit: cover; }
+  .hero-preview-body { padding: 14px 16px; }
+  .hero-preview-tag {
+    display: inline-block; background: rgba(232,133,58,.12); color: var(--accent); font-size: 9px; font-weight: 600;
+    padding: 3px 8px; border-radius: 5px; letter-spacing: .06em; text-transform: uppercase;
+    font-family: 'JetBrains Mono', monospace; margin-bottom: 8px;
+  }
+  .hero-preview-title { font-family: 'Fraunces', serif; font-size: 14px; font-weight: 500; line-height: 1.3; margin-bottom: 6px; color: var(--fg); }
+  .hero-preview-meta { font-size: 10px; color: var(--muted); font-family: 'JetBrains Mono', monospace; }
+
+  /* ---------- Marquee ---------- */
+  .marquee-section { padding: 32px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); overflow: hidden; background: rgba(8,8,10,.4); }
+  .marquee { display: flex; gap: 80px; animation: scroll-marquee 40s linear infinite; white-space: nowrap; width: max-content; }
+  .marquee-item {
+    font-family: 'Fraunces', serif; font-style: italic; font-weight: 300; font-size: 28px; letter-spacing: -.02em;
+    color: var(--muted); display: flex; align-items: center; gap: 80px; flex-shrink: 0;
+    font-variation-settings: "opsz" 144, "SOFT" 100;
+  }
+  .marquee-item::after { content: '✦'; color: var(--accent); font-size: 14px; font-style: normal; }
+  @keyframes scroll-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* ---------- Shared section headers ---------- */
+  .stats-eyebrow {
+    color: var(--accent); font-size: 11px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase;
+    font-family: 'JetBrains Mono', monospace; display: flex; align-items: center; gap: 12px; margin-bottom: 16px;
+  }
+  .stats-eyebrow::before { content: ''; width: 32px; height: 1px; background: var(--accent); }
+  .section-title { font-size: clamp(32px, 4.5vw, 60px); font-weight: 400; line-height: 1.05; max-width: 760px; letter-spacing: -.035em; }
+  .section-title em { font-style: italic; color: var(--accent); font-weight: 300; font-variation-settings: "opsz" 144, "SOFT" 100; }
+  .section-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 80px; flex-wrap: wrap; gap: 32px; }
+  .section-header p { color: var(--fg-2); font-size: 16px; line-height: 1.7; max-width: 460px; }
+
+  /* ---------- Stats ---------- */
+  .stats { padding: 120px 40px; max-width: 1320px; margin: 0 auto; }
+  .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; }
+  .stat-cell { background: var(--bg); padding: 40px 32px; transition: background .4s; }
+  .stat-cell:hover { background: var(--bg-2); }
+  .stat-number { font-family: 'Fraunces', serif; font-size: 64px; font-weight: 300; letter-spacing: -.04em; line-height: 1; margin-bottom: 12px; }
+  .stat-number .unit { color: var(--accent); font-style: italic; font-weight: 300; }
+  .stat-label { font-size: 12px; color: var(--muted); font-family: 'JetBrains Mono', monospace; letter-spacing: .04em; text-transform: uppercase; }
+
+  /* ---------- Work ---------- */
+  .work-section { padding: 120px 40px; max-width: 1320px; margin: 0 auto; position: relative; }
+  .case-study { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; margin-bottom: 160px; position: relative; }
+  .case-study:last-child { margin-bottom: 0; }
+  .case-study.flip { direction: rtl; }
+  .case-study.flip > * { direction: ltr; }
+  .case-number {
+    position: absolute; font-family: 'Fraunces', serif; font-style: italic; font-weight: 300; font-size: 320px;
+    line-height: 1; color: var(--bg-3); z-index: 0; top: -80px; pointer-events: none;
+    font-variation-settings: "opsz" 144, "SOFT" 100;
+  }
+  .case-study:not(.flip) .case-number { right: -40px; }
+  .case-study.flip .case-number { left: -40px; }
+  .case-visual { position: relative; z-index: 2; }
+  .case-image-frame {
+    position: relative; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 20px;
+    background: var(--bg-2); border: 1px solid var(--line);
+  }
+  .case-image-frame img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s cubic-bezier(.16,1,.3,1); }
+  .case-image-frame:hover img { transform: scale(1.06); }
+  .case-image-overlay {
+    position: absolute; inset: 0; background: linear-gradient(180deg, transparent 60%, rgba(8,8,10,.7));
+    display: flex; align-items: flex-end; padding: 28px; opacity: 0; transition: opacity .4s;
+  }
+  .case-image-frame:hover .case-image-overlay { opacity: 1; }
+  .view-btn {
+    background: var(--fg); color: var(--bg); padding: 12px 18px; border-radius: 10px; font-size: 12px; font-weight: 600;
+    display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: .06em;
+  }
+  .case-info { position: relative; z-index: 2; }
+  .case-meta-row {
+    display: flex; align-items: center; gap: 16px; margin-bottom: 28px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--muted);
+  }
+  .case-meta-row .divider { width: 24px; height: 1px; background: var(--line-2); }
+  .case-meta-row .category { color: var(--accent); }
+  .case-title { font-size: clamp(32px, 3.5vw, 48px); font-weight: 400; line-height: 1.05; letter-spacing: -.035em; margin-bottom: 24px; }
+  .case-title em { font-style: italic; color: var(--accent); font-weight: 300; font-variation-settings: "opsz" 144, "SOFT" 100; }
+  .case-desc { color: var(--fg-2); font-size: 16px; line-height: 1.7; margin-bottom: 36px; max-width: 480px; }
+  .case-deliverables { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 36px; }
+  .deliverable-item { border-top: 1px solid var(--line-2); padding-top: 14px; }
+  .deliverable-label { font-size: 10px; color: var(--muted-2); font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 6px; }
+  .deliverable-value { font-size: 15px; color: var(--fg); font-weight: 500; }
+  .case-cta {
+    display: inline-flex; align-items: center; gap: 12px; color: var(--fg); font-size: 14px; font-weight: 600;
+    text-decoration: none; padding-bottom: 6px; border-bottom: 1px solid var(--line-2); transition: all .3s; background: none; border-top: none; border-left: none; border-right: none;
+  }
+  .case-cta:hover { color: var(--accent); border-color: var(--accent); gap: 16px; }
+  .case-cta i { font-size: 11px; }
+
+  /* ---------- Lightbox ---------- */
+  .lightbox {
+    position: fixed; inset: 0; background: rgba(5,5,7,.96); backdrop-filter: blur(24px); z-index: 300;
+    display: none; align-items: center; justify-content: center; padding: 60px 40px; opacity: 0; transition: opacity .4s;
+  }
+  .lightbox.active { display: flex; opacity: 1; }
+  .lightbox-content {
+    max-width: 1200px; width: 100%; background: var(--bg-2); border: 1px solid var(--line-2); border-radius: 24px;
+    overflow: hidden; display: grid; grid-template-columns: 1.4fr 1fr; max-height: 85vh; position: relative;
+    transform: scale(.95); transition: transform .4s cubic-bezier(.34,1.56,.64,1);
+  }
+  .lightbox.active .lightbox-content { transform: scale(1); }
+  .lightbox-image { background: #050507; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+  .lightbox-image img { width: 100%; height: 100%; object-fit: cover; }
+  .lightbox-info { padding: 48px; overflow-y: auto; }
+  .lightbox-tag { display: inline-block; background: rgba(232,133,58,.12); color: var(--accent); font-size: 10px; font-weight: 600; padding: 4px 10px; border-radius: 6px; letter-spacing: .06em; text-transform: uppercase; font-family: 'JetBrains Mono', monospace; margin-bottom: 16px; }
+  .lightbox-title { font-size: 32px; font-weight: 400; letter-spacing: -.03em; margin-bottom: 18px; }
+  .lightbox-desc { color: var(--fg-2); font-size: 15px; line-height: 1.7; margin-bottom: 28px; }
+  .lightbox-points { display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
+  .lightbox-point { display: flex; gap: 10px; font-size: 13.5px; color: var(--fg-2); }
+  .lightbox-point i { color: var(--accent); font-size: 11px; margin-top: 4px; }
+  .lightbox-close {
+    position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,.6); border: 1px solid var(--line-2);
+    color: var(--fg); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    z-index: 10; transition: all .3s;
+  }
+  .lightbox-close:hover { background: var(--accent); color: var(--bg); transform: rotate(90deg); }
+
+  /* ---------- Deliverables ---------- */
+  .deliverables-section { padding: 120px 40px; max-width: 1320px; margin: 0 auto; }
+  .deliverables-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 80px; }
+  .deliverable-col {
+    background: var(--bg-card); border: 1px solid var(--line); border-radius: 24px; padding: 40px;
+    position: relative; overflow: hidden; transition: all .4s;
+  }
+  .deliverable-col::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: 0; transition: opacity .4s; }
+  .deliverable-col:hover { border-color: var(--line-2); transform: translateY(-4px); }
+  .deliverable-col:hover::before { opacity: 1; }
+  .dc-num { font-family: 'Fraunces', serif; font-style: italic; font-weight: 300; font-size: 80px; line-height: 1; color: var(--accent); opacity: .15; position: absolute; top: 20px; right: 24px; }
+  .dc-icon-wrap { width: 52px; height: 52px; border-radius: 14px; border: 1px solid var(--line-2); background: var(--glass); display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 20px; margin-bottom: 28px; }
+  .dc-title { font-family: 'Fraunces', serif; font-size: 24px; font-weight: 500; margin-bottom: 6px; letter-spacing: -.02em; }
+  .dc-dim { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted); margin-bottom: 28px; letter-spacing: .04em; }
+  .dc-list { display: flex; flex-direction: column; gap: 14px; }
+  .dc-item { display: flex; align-items: flex-start; gap: 12px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+  .dc-item:last-child { border-bottom: none; }
+  .dc-check { width: 18px; height: 18px; border-radius: 50%; background: rgba(232,133,58,.1); color: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 8px; margin-top: 4px; }
+  .dc-item-text { font-size: 13px; color: var(--fg-2); line-height: 1.5; }
+  .dc-item-text strong { color: var(--fg); font-weight: 600; display: block; margin-bottom: 2px; }
+
+  /* ---------- Process ---------- */
+  .process-section { padding: 120px 40px; max-width: 1320px; margin: 0 auto; }
+  .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 80px; }
+  .process-step { border-top: 1px solid var(--line-2); padding-top: 28px; transition: border-color .4s; }
+  .process-step:hover { border-color: var(--accent); }
+  .ps-num { font-family: 'Fraunces', serif; font-style: italic; font-weight: 300; font-size: 44px; color: var(--accent); margin-bottom: 18px; }
+  .ps-title { font-family: 'Fraunces', serif; font-size: 20px; font-weight: 500; margin-bottom: 10px; letter-spacing: -.02em; }
+  .ps-desc { color: var(--fg-2); font-size: 14px; line-height: 1.65; margin-bottom: 16px; }
+  .ps-meta { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
+
+  /* ---------- Testimonials ---------- */
+  .testimonials-section { padding: 120px 40px; max-width: 1320px; margin: 0 auto; }
+  .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 80px; }
+  .testimonial-card { background: var(--bg-card); border: 1px solid var(--line); border-radius: 24px; padding: 40px; transition: all .4s; display: flex; flex-direction: column; }
+  .testimonial-card:hover { border-color: var(--line-2); transform: translateY(-3px); }
+  .testimonial-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+  .testimonial-stars { display: flex; gap: 3px; color: var(--accent); font-size: 12px; }
+  .t-metric {
+    background: rgba(232,133,58,.1); color: var(--accent); font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
+    padding: 5px 10px; border-radius: 999px; border: 1px solid rgba(232,133,58,.2); white-space: nowrap;
+  }
+  .testimonial-quote { font-family: 'Fraunces', serif; font-size: 18px; line-height: 1.55; color: var(--fg); margin-bottom: 32px; flex: 1; }
+  .testimonial-quote em { font-style: italic; color: var(--accent); font-weight: 300; }
+  .testimonial-author { display: flex; align-items: center; gap: 14px; padding-top: 24px; border-top: 1px solid var(--line); }
+  .author-avatar { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Fraunces', serif; font-weight: 600; font-size: 16px; color: var(--bg); flex-shrink: 0; }
+  .author-name { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
+  .author-meta { font-size: 11px; color: var(--muted); font-family: 'JetBrains Mono', monospace; }
+  .verified-tag {
+    margin-left: auto; background: rgba(74,222,128,.08); color: var(--green); font-size: 9px; font-weight: 600;
+    padding: 4px 8px; border-radius: 6px; border: 1px solid rgba(74,222,128,.2);
+    font-family: 'JetBrains Mono', monospace; letter-spacing: .05em; text-transform: uppercase;
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq-section { padding: 120px 40px; max-width: 1320px; margin: 0 auto; }
+  .faq-wrap { max-width: 820px; margin: 80px auto 0; }
+  .faq-item { border-bottom: 1px solid var(--line); }
+  .faq-q {
+    width: 100%; background: none; border: none; color: var(--fg); display: flex; justify-content: space-between;
+    align-items: center; gap: 20px; padding: 26px 4px; font-family: 'Fraunces', serif; font-size: 19px;
+    font-weight: 500; text-align: left; letter-spacing: -.01em;
+  }
+  .faq-q i { color: var(--accent); transition: transform .4s; font-size: 13px; flex-shrink: 0; }
+  .faq-item.open .faq-q i { transform: rotate(45deg); }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height .5s cubic-bezier(.16,1,.3,1); }
+  .faq-a p { color: var(--fg-2); font-size: 15px; line-height: 1.7; padding: 0 4px 26px; max-width: 640px; }
+
+  /* ---------- Contact ---------- */
+  .contact-section { padding: 140px 40px 120px; max-width: 1320px; margin: 0 auto; }
+  .contact-container {
+    background: linear-gradient(180deg, rgba(232,133,58,.04), rgba(232,133,58,.01));
+    border: 1px solid var(--line-2); border-radius: 32px; overflow: hidden; position: relative;
+  }
+  .contact-glow { position: absolute; top: -150px; left: 50%; transform: translateX(-50%); width: 700px; height: 350px; background: radial-gradient(ellipse at center, var(--accent-glow), transparent 70%); pointer-events: none; }
+  .contact-inner { padding: 80px 60px; position: relative; z-index: 1; }
+  .contact-header { text-align: center; margin-bottom: 64px; }
+  .contact-eyebrow {
+    color: var(--accent); font-size: 11px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase;
+    font-family: 'JetBrains Mono', monospace; display: inline-flex; align-items: center; gap: 12px; margin-bottom: 24px;
+  }
+  .contact-eyebrow::before, .contact-eyebrow::after { content: ''; width: 32px; height: 1px; background: var(--accent); }
+  .contact-title { font-size: clamp(40px, 5vw, 72px); font-weight: 400; line-height: 1; letter-spacing: -.04em; margin-bottom: 24px; }
+  .contact-title em { font-style: italic; color: var(--accent); font-weight: 300; }
+  .contact-sub { color: var(--fg-2); font-size: 17px; max-width: 540px; margin: 0 auto; line-height: 1.6; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 60px; align-items: start; }
+  .contact-info { padding-right: 40px; }
+  .info-item { margin-bottom: 32px; padding-bottom: 32px; border-bottom: 1px solid var(--line); }
+  .info-item:last-child { border-bottom: none; }
+  .info-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 8px; }
+  .info-value { font-family: 'Fraunces', serif; font-size: 20px; color: var(--fg); font-weight: 500; letter-spacing: -.01em; }
+  .info-value em { font-style: italic; color: var(--accent); font-weight: 300; }
+  .info-link { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--line-2); transition: all .3s; }
+  .info-link:hover { color: var(--accent); border-color: var(--accent); }
+  .contact-form { background: var(--bg-card); border: 1px solid var(--line); border-radius: 20px; padding: 40px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  .form-group { margin-bottom: 20px; }
+  .form-label { display: block; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 500; color: var(--muted); margin-bottom: 10px; letter-spacing: .05em; text-transform: uppercase; }
+  .form-input, .form-select, .form-textarea {
+    width: 100%; background: rgba(245,243,239,.02); border: 1px solid var(--line); border-radius: 10px;
+    padding: 14px 16px; color: var(--fg); font-size: 14px; font-family: inherit; transition: all .3s;
+  }
+  .form-input:focus, .form-select:focus, .form-textarea:focus { outline: none; border-color: var(--accent); background: rgba(232,133,58,.04); }
+  .form-textarea { resize: vertical; min-height: 110px; }
+  .form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238A8780' d='M6 8L2 4h8z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 16px center;
+  }
+  .form-submit {
+    width: 100%; background: var(--accent); color: var(--bg); border: none; padding: 18px; border-radius: 12px;
+    font-size: 14px; font-weight: 600; transition: all .3s; display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 8px;
+  }
+  .form-submit:hover { background: var(--accent-soft); transform: translateY(-1px); box-shadow: 0 12px 32px var(--accent-glow); }
+  .form-alt { margin-top: 18px; text-align: center; font-size: 12px; color: var(--muted); }
+  .form-alt a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(232,133,58,.3); }
+  .form-alt a:hover { border-color: var(--accent); }
+
+  /* ---------- Footer ---------- */
+  footer { border-top: 1px solid var(--line); padding: 100px 40px 40px; }
+  .footer-inner { max-width: 1320px; margin: 0 auto; }
+  .footer-cta { text-align: center; margin-bottom: 100px; }
+  .footer-giant { font-size: clamp(38px, 6.5vw, 92px); line-height: 1; letter-spacing: -.045em; margin-bottom: 40px; font-weight: 400; }
+  .footer-giant em { font-style: italic; font-weight: 300; color: var(--accent); }
+  .footer-bar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; border-top: 1px solid var(--line); padding-top: 40px; }
+  .footer-logo { font-family: 'Fraunces', serif; font-weight: 500; font-size: 26px; display: flex; align-items: center; gap: 10px; }
+  .footer-copy { font-size: 11px; color: var(--muted-2); font-family: 'JetBrains Mono', monospace; letter-spacing: .04em; }
+  .footer-social { display: flex; gap: 10px; }
+  .footer-social a { width: 38px; height: 38px; border-radius: 10px; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; color: var(--muted); text-decoration: none; transition: all .3s; }
+  .footer-social a:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-2px); }
+
+  /* ---------- Toast ---------- */
+  .toast {
+    position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%) translateY(140px);
+    background: var(--bg-2); border: 1px solid var(--accent); color: var(--fg); padding: 16px 24px;
+    border-radius: 14px; font-size: 14px; font-weight: 500; box-shadow: 0 16px 48px rgba(0,0,0,.6);
+    z-index: 400; transition: transform .5s cubic-bezier(.34,1.56,.64,1); display: flex; align-items: center; gap: 12px; white-space: nowrap;
+  }
+  .toast.show { transform: translateX(-50%) translateY(0); }
+  .toast i { color: var(--accent); }
+
+  /* ---------- Sticky mobile CTA ---------- */
+  .mobile-cta {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 90; display: none; gap: 10px;
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+    background: rgba(8,8,10,.88); backdrop-filter: blur(20px); border-top: 1px solid var(--line);
+  }
+  .mobile-cta a { flex: 1; text-align: center; padding: 14px; border-radius: 12px; font-size: 13px; font-weight: 600; text-decoration: none; }
+  .mc-work { border: 1px solid var(--line-2); color: var(--fg); }
+  .mc-hire { background: var(--accent); color: var(--bg); }
+
+  /* ---------- Reveal ---------- */
+  .reveal { opacity: 0; transform: translateY(40px); transition: opacity 1s cubic-bezier(.16,1,.3,1), transform 1s cubic-bezier(.16,1,.3,1); }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: .1s; }
+  .reveal-delay-2 { transition-delay: .2s; }
+  .reveal-delay-3 { transition-delay: .3s; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 1024px) {
+    .hero-preview { display: none; }
+    .stats-grid { grid-template-columns: 1fr; gap: 0; }
+    .stat-cell { border-bottom: 1px solid var(--line); }
+    .stat-cell:last-child { border-bottom: none; }
+    .case-study { grid-template-columns: 1fr; gap: 40px; direction: ltr !important; }
+    .case-number { font-size: 200px; top: -40px; }
+    .deliverables-grid, .testimonials-grid { grid-template-columns: 1fr; }
+    .process-grid { grid-template-columns: 1fr 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .contact-info { padding-right: 0; }
+    .lightbox-content { grid-template-columns: 1fr; max-height: 90vh; overflow-y: auto; }
+    .nav-links { display: none; }
+    .nav-burger { display: flex; }
+    .nav-logo { font-size: 20px; }
+  }
+  @media (max-width: 640px) {
+    .hero { padding: 120px 20px 60px; }
+    .stats, .work-section, .deliverables-section, .process-section, .testimonials-section, .faq-section, .contact-section { padding: 80px 20px; }
+    .contact-inner { padding: 48px 24px; }
+    .form-row { grid-template-columns: 1fr; }
+    .stat-number { font-size: 48px; }
+    .case-number { font-size: 140px; }
+    .case-deliverables { grid-template-columns: 1fr; }
+    .footer-bar { flex-direction: column; text-align: center; }
+    .process-grid { grid-template-columns: 1fr; }
+    footer { padding: 80px 20px 40px; }
+    body { padding-bottom: 76px; }
+    .mobile-cta { display: flex; }
+    .toast { bottom: 90px; max-width: calc(100% - 32px); white-space: normal; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-name">Betsegaw <em>Gobezie</em></div>
+    <div class="preloader-bar"><span></span></div>
+  </div>
+</div>
+
+<!-- Custom cursor -->
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-logo">Betsegaw <em>Gobezie</em></div>
+  <div class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#deliverables">Deliverables</a>
+    <a href="#process">Process</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a class="nav-cta" href="https://www.upwork.com/freelancers/~01db35df56f2f1754d?mp_source=share" target="_blank" rel="noopener noreferrer" data-magnetic>
+      <i class="fab fa-upwork"></i>
+      Hire me
+    </a>
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#work">Work</a>
+  <a href="#deliverables">Deliverables</a>
+  <a href="#process">Process</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="hero-container">
+    <span class="hero-eyebrow">
+      <span class="dot"></span>
+      Available for new projects · Q1 2026
+    </span>
+
+    <h1>
+      <span class="line"><span class="line-inner">I design Amazon</span></span>
+      <span class="line"><span class="line-inner">listings that <span class="italic-accent">out-convert</span></span></span>
+      <span class="line"><span class="line-inner">your competitors.</span></span>
+    </h1>
+
+    <p class="hero-sub">
+      Specialized in high-converting listing images, A+ content, and brand story packages — engineered strictly to Amazon guidelines, crafted to win the Buy Box.
+    </p>
+
+    <div class="cta-row">
+      <a href="https://www.upwork.com/freelancers/~01db35df56f2f1754d?mp_source=share" target="_blank" rel="noopener noreferrer" class="btn-primary" data-magnetic>
+        <i class="fab fa-upwork"></i>
+        Hire me on Upwork
+      </a>
+      <a href="#work" class="btn-ghost">
+        View selected work
+        <i class="fas fa-arrow-down" style="font-size: 11px;"></i>
+      </a>
+    </div>
+
+    <div class="trust-row">
+      <div class="trust-item">
+        <i class="fas fa-shield-halved icon"></i>
+        100% Amazon Compliant
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-mobile-screen icon"></i>
+        Mobile-Optimized
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-file-code icon"></i>
+        Source Files · PSD/AI
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-circle-check icon"></i>
+        Upwork Verified
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating preview card — External GPU case -->
+  <div class="hero-preview">
+    <a href="#work" class="hero-preview-card">
+      <div class="hero-preview-img">
+        <!-- If this photo is actually the red-light-mask render, swap src below to the GPU image (prop2.jpg) -->
+        <img src="https://i.ibb.co/yFRKtnzw/prop.jpg" alt="External GPU Enclosure listing preview">
+      </div>
+      <div class="hero-preview-body">
+        <span class="hero-preview-tag">Case 01 · Consumer Electronics</span>
+        <div class="hero-preview-title">External GPU Enclosure</div>
+        <div class="hero-preview-meta">100% Amazon Compliant</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- Marquee -->
+<section class="marquee-section">
+  <div class="marquee">
+    <span class="marquee-item">Health & Wellness</span>
+    <span class="marquee-item">Consumer Electronics</span>
+    <span class="marquee-item">Beauty & Skincare</span>
+    <span class="marquee-item">Home & Kitchen</span>
+    <span class="marquee-item">Pet Supplies</span>
+    <span class="marquee-item">Sports & Outdoors</span>
+    <span class="marquee-item">Baby Care</span>
+    <span class="marquee-item">Automotive</span>
+    <span class="marquee-item">Health & Wellness</span>
+    <span class="marquee-item">Consumer Electronics</span>
+    <span class="marquee-item">Beauty & Skincare</span>
+    <span class="marquee-item">Home & Kitchen</span>
+    <span class="marquee-item">Pet Supplies</span>
+    <span class="marquee-item">Sports & Outdoors</span>
+    <span class="marquee-item">Baby Care</span>
+    <span class="marquee-item">Automotive</span>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="stats reveal">
+  <div class="section-header">
+    <div>
+      <div class="stats-eyebrow">By the numbers</div>
+      <h2 class="section-title">A track record built on <em>compliance</em>, not guesswork.</h2>
+    </div>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-cell">
+      <div class="stat-number"><span class="counter" data-count="100">0</span><span class="unit">%</span></div>
+      <div class="stat-label">Amazon Compliance Rate</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-number"><span class="counter" data-count="0">0</span><span class="unit"></span></div>
+      <div class="stat-label">Seller Central Rejections</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-number">48–72<span class="unit">hr</span></div>
+      <div class="stat-label">Standard Turnaround</div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Work -->
+<section class="work-section" id="work">
+  <div class="section-header reveal">
+    <div>
+      <div class="stats-eyebrow">Selected Work</div>
+      <h2 class="section-title" style="font-size: clamp(40px, 5.5vw, 80px);">Two case studies. <em>Two brands transformed.</em></h2>
+    </div>
+    <p>A curated selection from this quarter's portfolio — each project a complete Amazon visual package: main images, A+ content modules, and brand story. Click any case to zoom into the 2000×2000 listing details.</p>
+  </div>
+
+  <!-- Case Study 01 -->
+  <article class="case-study reveal" data-case="0">
+    <div class="case-number">01</div>
+    <div class="case-visual">
+      <div class="case-image-frame">
+        <img src="https://i.ibb.co/spcHFL8g/prop2.jpg" alt="External GPU Enclosure package">
+        <div class="case-image-overlay">
+          <div class="view-btn"><i class="fas fa-magnifying-glass-plus"></i> Inspect details</div>
+        </div>
+      </div>
+    </div>
+    <div class="case-info">
+      <div class="case-meta-row">
+        <span class="category">Listing · A+ Content</span>
+        <span class="divider"></span>
+        <span>Consumer Electronics</span>
+      </div>
+      <h3 class="case-title">External GPU <em>Enclosure</em></h3>
+      <p class="case-desc">
+        High-performance visual package for a thunderbolt-connected external GPU enclosure. Technical infographics highlighted PCIe speeds and thermal cooling, engineered to appeal to hardcore gamers and creatives without triggering Amazon's restricted tech flags.
+      </p>
+      <div class="case-deliverables">
+        <div class="deliverable-item">
+          <div class="deliverable-label">Listing Images</div>
+          <div class="deliverable-value">7 × 2000×2000px</div>
+        </div>
+        <div class="deliverable-item">
+          <div class="deliverable-label">A+ Modules</div>
+          <div class="deliverable-value">5 × 970×600 / 300px</div>
+        </div>
+        <div class="deliverable-item">
+          <div class="deliverable-label">Technical Schemas</div>
+          <div class="deliverable-value">Included</div>
+        </div>
+        <div class="deliverable-item">
+          <div class="deliverable-label">Upload Status</div>
+          <div class="deliverable-value">100% Approved</div>
+        </div>
+      </div>
+      <button class="case-cta js-open-case">Open case study <i class="fas fa-arrow-right"></i></button>
+    </div>
+  </article>
+
+  <!-- Case Study 02 -->
+  <article class="case-study flip reveal" data-case="1">
+    <div class="case-number">02</div>
+    <div class="case-visual">
+      <div class="case-image-frame">
+        <img src="https://i.ibb.co/4nnfhZkV/prop3.jpg" alt="Red Light Therapy Face Mask listing">
+        <div class="case-image-overlay">
+          <div class="view-btn"><i class="fas fa-magnifying-glass-plus"></i> Inspect details</div>
+        </div>
+      </div>
+    </div>
+    <div class="case-info">
+      <div class="case-meta-row">
+        <span class="category">Listing · A+ · Brand Story</span>
+        <span class="divider"></span>
+        <span>Beauty & Skincare</span>
+      </div>
+      <h3 class="case-title">Red Light Therapy <em>Face Mask</em></h3>
+      <p class="case-desc">
+        Premium brand story and A+ content for an FDA-cleared LED light therapy mask. Visuals focused on clinical efficacy and spa-grade luxury, using elegant lifestyle imagery while adhering strictly to Amazon's medical claim guidelines.
+      </p>
+      <div class="case-deliverables">
+        <div class="deliverable-item">
+          <div class="deliverable-label">Listing Images</div>
+          <div class="deliverable-value">8 × 2000×2000px</div>
+        </div>
+        <div class="deliverable-item">
+          <div class="deliverable-label">A+ Modules</div>
+          <div class="deliverable-value">6 × 970×600 / 300px</div>
+        </div>
+        <div class="deliverable-item">
+          <div class="deliverable-label">Brand Story</div>
+          <div class="deliverable-value">4-card carousel</div>
+        </div>
+        <div class="deliverable-item">
+          <div class="deliverable-label">Upload Status</div>
+          <div class="deliverable-value">100% Approved</div>
+        </div>
+      </div>
+      <button class="case-cta js-open-case">Open case study <i class="fas fa-arrow-right"></i></button>
+    </div>
+  </article>
+</section>
+
+<!-- Deliverables -->
+<section class="deliverables-section" id="deliverables">
+  <div class="section-header reveal">
+    <div>
+      <div class="stats-eyebrow">What's Included</div>
+      <h2 class="section-title">Complete deliverables. <em>Zero guesswork.</em></h2>
+    </div>
+    <p>Every package is engineered to Amazon's exact specifications — pixel-perfect dimensions, guideline-compliant visuals, and ready-to-upload source files. Three pillars, fully realized.</p>
+  </div>
+
+  <div class="deliverables-grid reveal">
+    <div class="deliverable-col">
+      <div class="dc-num">01</div>
+      <div class="dc-icon-wrap"><i class="fas fa-image"></i></div>
+      <div class="dc-title">Listing Images</div>
+      <div class="dc-dim">2000×2000px · RGB · JPG/PNG</div>
+      <div class="dc-list">
+        <div class="dc-item">
+          <div class="dc-check"><i class="fas fa-check"></i></div>
+          <div class="dc-item-text"><strong>Main Image · Pure White BG</strong>85%+ product fill, no text/logos per Amazon TOS</div>
+        </div>
+        <div class="dc-item">
+          <div class="dc-check"><i class="fas fa-check"></i></div>
+          <div class="dc-item-text"><strong>Feature Infographics</strong>Bold callouts, iconography, benefit hierarchy</div>
+        </div>
+        <div class="dc-item">
+          <div class="dc-check"><i class="fas fa-check"></i></div>
+          <div class="dc-item-text"><strong>Size Chart Visual</strong>Dimensional diagram with measurement annotations</div>
+        </div>
+        <div class="dc-item">
+          <div class="dc-check"><i class="fas fa-check"></i></div>
+          <div class="dc-item-text"><strong>Comparison Chart</strong>Side-by-side vs. competitors with feature matrix</div>
+        </div>
+        <div class="dc-item">
+          <div class="dc-check"><i class="fas fa-check"></i></div>
+          <div class="dc-item-text"><strong>Lifestyle + What's In The Box</strong>In-context usage and unboxing visuals</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="deliverable-col">
+      <div class="dc-num">02</div>
+      <div class="dc-icon-wrap"><i class="fas fa-table-cells-large"></i></div>
+      <div class="dc-title">A+ Content / EBC</div>
+      <div class="dc-dim">970×600 & 970×300px · 6 Modules</div>
+      <div class="dc-list">
+        <div class="dc-item">
+          <div class="dc-check"><i class="fas fa-check"></i></div>
+          <div class="dc-item-text"><strong>Brand Hero Module (970×600)</strong>Full-width statement banner with brand visual</div>
+        </div>
+        <div class="dc-item">
+          <div class="dc-check"><i class="fas fa-check"></i></div>
+          <div class="dc-item-text"><strong>Feature Highlight Modules</strong>3–4 split image/text layouts at 970×300px</div>
+        </div>
+        <div class="dc-item">
+          <div class="dc-check"><i class="fas fa-check"></i></div>
+          <div class="dc-item-text"><strong>Comparison Module</strong>Product line-up table built to Amazon's module specs</div>
+        </div>
+        <div class="dc-item">
+          <div class="dc-check"><i class="fas fa-check"></i></div>
+          <div class="dc-item-text"><strong>Trust Badges Strip</strong>Certifications, guarantees, social proof elements</div>
+        </div>
+        <div class="dc-item">
+          <div class="dc-check"><i class="fas fa-check"></i></div>
+          <div class="dc-item-text"><strong>Mobile QA Pass</strong>Every module checked at thumbnail scale before handoff</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="deliverable-col">
+      <div class="dc-num">03</div>
+      <div class="dc-icon-wrap"><i class="fas fa-book-open"></i></div>
+      <div class="dc-title">Brand Story</div>
+      <div class="dc-dim">4-Card Carousel · 1200×600px</div>
+      <div class="dc-list">
+        <div class="dc-item">
+          <div class="dc-check"><i class="fas fa-check"></i></div>
+          <div class="dc-item-text"><strong>Founder / Origin Card</strong>Why the brand exists — told visually</div>
+        </div>
+        <div class="dc-item">
+          <div class="dc-check"><i class="fas fa-check"></i></div>
+          <div class="dc-item-text"><strong>Values & Craft Card</strong>Materials, process, quality commitments</div>
+        </div>
+        <div class="dc-item">
+          <div class="dc-check"><i class="fas fa-check"></i></div>
+          <div class="dc-item-text"><strong>Lifestyle World Card</strong>The customer's life with the product</div>
+        </div>
+        <div class="dc-item">
+          <div class="dc-check"><i class="fas fa-check"></i></div>
+          <div class="dc-item-text"><strong>Cross-Sell CTA Card</strong>Routes shoppers into your full catalog</div>
+        </div>
+        <div class="dc-item">
+          <div class="dc-check"><i class="fas fa-check"></i></div>
+          <div class="dc-item-text"><strong>Source Files Included</strong>Layered PSD/AI, organized and labeled</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="process-section" id="process">
+  <div class="section-header reveal">
+    <div>
+      <div class="stats-eyebrow">How It Works</div>
+      <h2 class="section-title">A process refined over <em>every single project.</em></h2>
+    </div>
+    <p>No endless back-and-forth, no surprises. Four clear steps from your first message to files live on your listing.</p>
+  </div>
+  <div class="process-grid reveal">
+    <div class="process-step">
+      <div class="ps-num">01</div>
+      <div class="ps-title">Brief & Teardown</div>
+      <div class="ps-desc">You share the product, brand assets and competitor ASINs. I audit the top 5 listings in your niche and map exactly where yours can win.</div>
+      <div class="ps-meta">Day 1 · ~24 hrs</div>
+    </div>
+    <div class="process-step">
+      <div class="ps-num">02</div>
+      <div class="ps-title">Concept Direction</div>
+      <div class="ps-desc">Two distinct visual directions with layout wireframes. You pick the route — or blend elements of both.</div>
+      <div class="ps-meta">Day 1–2</div>
+    </div>
+    <div class="process-step">
+      <div class="ps-num">03</div>
+      <div class="ps-title">Design & Refine</div>
+      <div class="ps-desc">Full production at 2000×2000px with structured revision rounds. Compliance checked line-by-line against Amazon TOS.</div>
+      <div class="ps-meta">Day 2–3</div>
+    </div>
+    <div class="process-step">
+      <div class="ps-num">04</div>
+      <div class="ps-title">Delivery & Upload</div>
+      <div class="ps-desc">Final exports, layered source files, and an upload guide with alt-text. I stay available until everything is live and approved.</div>
+      <div class="ps-meta">Day 3+ · Done</div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section" id="testimonials">
+  <div class="section-header reveal">
+    <div>
+      <div class="stats-eyebrow">Client Voices</div>
+      <h2 class="section-title">Sellers don't just like the work. <em>They re-order it.</em></h2>
+    </div>
+  </div>
+  <div class="testimonials-grid reveal">
+    <div class="testimonial-card">
+      <div class="testimonial-top">
+        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <span class="t-metric">+34% CVR</span>
+      </div>
+      <p class="testimonial-quote">"Betsegaw rebuilt our main image stack and our conversion rate jumped <em>within two weeks</em>. The compliance knowledge alone is worth the fee."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar" style="background: linear-gradient(135deg, #E8853A, #B85A1A);">DK</div>
+        <div>
+          <div class="author-name">Daniel K.</div>
+          <div class="author-meta">Private Label Seller · Home & Kitchen</div>
+        </div>
+        <span class="verified-tag">Verified</span>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-top">
+        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <span class="t-metric">0 rejections · 40+ SKUs</span>
+      </div>
+      <p class="testimonial-quote">"Zero rejections across our entire catalog. He caught compliance issues our previous designer missed — <em>likely saved our account.</em>"</p>
+      <div class="testimonial-author">
+        <div class="author-avatar" style="background: linear-gradient(135deg, #FFB870, #E8853A);">SM</div>
+        <div>
+          <div class="author-name">Sarah M.</div>
+          <div class="author-meta">Brand Owner · Beauty</div>
+        </div>
+        <span class="verified-tag">Verified</span>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-top">
+        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <span class="t-metric">Shipped 3 days early</span>
+      </div>
+      <p class="testimonial-quote">"The A+ content looks like a <em>$100M brand</em> built it. Communication was flawless — updates before I even thought to ask."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar" style="background: linear-gradient(135deg, #8A8780, #5A5852);">TR</div>
+        <div>
+          <div class="author-name">Tomás R.</div>
+          <div class="author-meta">E-commerce Director · Electronics</div>
+        </div>
+        <span class="verified-tag">Verified</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="section-header reveal" style="justify-content: center; text-align: center;">
+    <div style="width: 100%;">
+      <div class="stats-eyebrow" style="justify-content: center;">Questions</div>
+      <h2 class="section-title" style="margin: 0 auto;">Everything sellers ask <em>before hiring.</em></h2>
+    </div>
+  </div>
+  <div class="faq-wrap reveal">
+    <div class="faq-item">
+      <button class="faq-q">How fast can you deliver?<i class="fas fa-plus"></i></button>
+      <div class="faq-a"><p>Standard turnaround is 48–72 hours from brief approval. Rush 24-hour delivery is available for urgent launches — just mention it in your first message and I'll confirm availability.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">What do you need from me to start?<i class="fas fa-plus"></i></button>
+      <div class="faq-a"><p>Product photos or samples, your brand assets (logo, fonts, colors if you have them), a list of key features and benefits, and 2–3 competitor ASINs. If you don't have professional photos, tell me — I'll advise on the fastest path.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Are your designs really 100% Amazon-compliant?<i class="fas fa-plus"></i></button>
+      <div class="faq-a"><p>Yes — every file is checked against current Amazon style guides before delivery, and it's backed by a simple promise: if Amazon rejects anything I deliver, I fix it free. To date: zero rejections.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">How many revisions are included?<i class="fas fa-plus"></i></button>
+      <div class="faq-a"><p>Every project includes structured revision rounds, agreed up front. Because we lock the concept direction before production, revisions are almost always small — tweaks, not redesigns.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Do I get the source files?<i class="fas fa-plus"></i></button>
+      <div class="faq-a"><p>Always. You receive fully layered, organized PSD/AI source files plus web-ready exports — so any future designer (or your team) can build on the work without starting over.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Why do you work through Upwork?<i class="fas fa-plus"></i></button>
+      <div class="faq-a"><p>Upwork protects both of us: milestone-based escrow means you never release payment until you approve the work, and the built-in contract and chat history keep everything documented. It's the safest way to hire a freelancer — for you.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <div class="contact-glow"></div>
+    <div class="contact-inner">
+      <div class="contact-header reveal">
+        <div class="contact-eyebrow">Let's Work Together</div>
+        <h2 class="contact-title">Ready to <em>out-convert</em> your niche?</h2>
+        <p class="contact-sub">Tell me about your product — or skip the form and message me directly on Upwork. Either way, you'll hear back within hours.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="info-item">
+            <div class="info-label">Fastest Route</div>
+            <div class="info-value"><a class="info-link" href="https://www.upwork.com/freelancers/~01db35df56f2f1754d?mp_source=share" target="_blank" rel="noopener noreferrer">Message me on <em>Upwork</em> →</a></div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Response Time</div>
+            <div class="info-value">Usually within <em>2 hours</em></div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Availability</div>
+            <div class="info-value">Q1 2026 · <em>2 slots left</em></div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Timezone</div>
+            <div class="info-value">GMT+3 · overlaps <em>US & EU</em></div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal-delay-1" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="fName">Your Name</label>
+              <input class="form-input" type="text" id="fName" placeholder="Jane Doe" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="fEmail">Email / Upwork</label>
+              <input class="form-input" type="text" id="fEmail" placeholder="jane@brand.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="fService">Service Needed</label>
+              <select class="form-select" id="fService">
+                <option>Listing Images</option>
+                <option>A+ Content / EBC</option>
+                <option>Brand Story</option>
+                <option>Full Package</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="fBudget">Budget Range</label>
+              <select class="form-select" id="fBudget">
+                <option>Under $350</option>
+                <option>$350 – $700</option>
+                <option>$700 – $1,500</option>
+                <option>$1,500+</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fMsg">About Your Product</label>
+            <textarea class="form-textarea" id="fMsg" placeholder="Product, category, competitor ASINs, timeline..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">
+            <i class="fab fa-upwork"></i>
+            Hire me — Continue on Upwork
+          </button>
+          <div class="form-alt">Prefer to talk first? <a href="https://www.upwork.com/freelancers/~01db35df56f2f1754d?mp_source=share" target="_blank" rel="noopener noreferrer">Open my Upwork profile</a></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-cta reveal">
+      <div class="footer-giant">Let's make your listing<br><em>impossible to scroll past.</em></div>
+      <a class="btn-primary" href="https://www.upwork.com/freelancers/~01db35df56f2f1754d?mp_source=share" target="_blank" rel="noopener noreferrer" data-magnetic style="font-size: 16px; padding: 20px 36px;">
+        <i class="fab fa-upwork"></i>
+        Hire me on Upwork
+      </a>
+    </div>
+    <div class="footer-bar">
+      <div class="footer-logo">Betsegaw <em>Gobezie</em></div>
+      <div class="footer-copy">© 2026 · AMAZON LISTING DESIGNER · ALL RIGHTS RESERVED</div>
+      <div class="footer-social">
+        <a href="https://www.upwork.com/freelancers/~01db35df56f2f1754d?mp_source=share" target="_blank" rel="noopener noreferrer" aria-label="Upwork"><i class="fab fa-upwork"></i></a>
+        <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile CTA -->
+<div class="mobile-cta">
+  <a href="#work" class="mc-work">View Work</a>
+  <a href="https://www.upwork.com/freelancers/~01db35df56f2f1754d?mp_source=share" target="_blank" rel="noopener noreferrer" class="mc-hire"><i class="fab fa-upwork"></i> Hire on Upwork</a>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <button class="lightbox-close" id="lightboxClose"><i class="fas fa-xmark"></i></button>
+    <div class="lightbox-image"><img id="lbImg" src="" alt=""></div>
+    <div class="lightbox-info">
+      <span class="lightbox-tag" id="lbTag"></span>
+      <h3 class="lightbox-title" id="lbTitle"></h3>
+      <p class="lightbox-desc" id="lbDesc"></p>
+      <div class="lightbox-points" id="lbPoints"></div>
+      <a class="btn-primary" href="https://www.upwork.com/freelancers/~01db35df56f2f1754d?mp_source=share" target="_blank" rel="noopener noreferrer" style="width: 100%; justify-content: center;">
+        <i class="fab fa-upwork"></i> Get results like this
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"><i class="fas fa-circle-check"></i><span id="toastMsg"></span></div>
+
+<script>
+  /* ============================================================
+     UPWORK DESTINATION — every "hire" action leads here
+     ============================================================ */
+  const UPWORK_URL = 'https://www.upwork.com/freelancers/~01db35df56f2f1754d?mp_source=share';
+
+  function goToUpwork() {
+    showToast('Taking you to Upwork — see you there', 'fa-arrow-right');
+    // Same-tab redirect. To open in a NEW tab instead, use:
+    // window.open(UPWORK_URL, '_blank', 'noopener');
+    setTimeout(() => { window.location.href = UPWORK_URL; }, 900);
+  }
+
+  /* ---------- Toast ---------- */
+  const toast = document.getElementById('toast');
+  const toastMsg = document.getElementById('toastMsg');
+  let toastTimer;
+  function showToast(msg, icon = 'fa-circle-check') {
+    toastMsg.textContent = msg;
+    toast.querySelector('i').className = 'fas ' + icon;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove('show'), 2600);
+  }
+
+  /* ---------- Form → Upwork redirect ---------- */
+  document.getElementById('contactForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    goToUpwork();
+  });
+
+  /* ---------- Preloader ---------- */
+  const preloader = document.getElementById('preloader');
+  const hidePreloader = () => preloader.classList.add('done');
+  if (document.readyState === 'complete') setTimeout(hidePreloader, 700);
+  else window.addEventListener('load', () => setTimeout(hidePreloader, 700));
+  setTimeout(hidePreloader, 3000); // safety net
+
+  /* ---------- Custom cursor ---------- */
+  const ring = document.getElementById('cursorRing');
+  const dot = document.getElementById('cursorDot');
+  const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (finePointer) {
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    window.addEventListener('mousemove', (e) => {
+      mx = e.clientX; my = e.clientY;
+      dot.style.left = mx + 'px'; dot.style.top = my + 'px';
+    });
+    (function loop() {
+      rx += (mx - rx) * 0.16; ry += (my - ry) * 0.16;
+      ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+      requestAnimationFrame(loop);
+    })();
+    document.querySelectorAll('a, button, .case-image-frame, .hero-preview-card, input, select, textarea, .faq-q').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        ring.classList.add('hover');
+        const t = el.getAttribute('data-cursor-text');
+        if (t) { ring.setAttribute('data-text', t); ring.classList.add('hover-text'); }
+      });
+      el.addEventListener('mouseleave', () => { ring.classList.remove('hover', 'hover-text'); });
+    });
+    /* Magnetic buttons */
+    document.querySelectorAll('[data-magnetic]').forEach(btn => {
+      btn.addEventListener('mousemove', (e) => {
+        const r = btn.getBoundingClientRect();
+        const x = (e.clientX - r.left - r.width / 2) / r.width;
+        const y = (e.clientY - r.top - r.height / 2) / r.height;
+        btn.style.transform = `translate(${x * 8}px, ${y * 6}px)`;
+      });
+      btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
+    });
+  }
+
+  /* ---------- Scroll progress ---------- */
+  const progress = document.getElementById('scrollProgress');
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    progress.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100 + '%';
+  }, { passive: true });
+
+  /* ---------- Reveal on scroll ---------- */
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('visible'); revealObserver.unobserve(en.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  /* ---------- Animated counters ---------- */
+  const easeOut = t => 1 - Math.pow(1 - t, 3);
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      const el = en.target, target = +el.dataset.count, dur = 1400, start = performance.now();
+      (function tick(now) {
+        const p = Math.min((now - start) / dur, 1);
+        el.textContent = Math.round(target * easeOut(p));
+        if (p < 1) requestAnimationFrame(tick);
+      })(start);
+      counterObserver.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+  /* ---------- Case study lightbox ---------- */
+  const CASES = [
+    {
+      img: 'https://i.ibb.co/spcHFL8g/prop2.jpg',
+      tag: 'Case 01 · Consumer Electronics',
+      title: 'External GPU Enclosure',
+      desc: 'High-performance visual package for a thunderbolt-connected external GPU enclosure. Technical infographics highlighted PCIe speeds and thermal cooling — engineered for gamers and creatives without triggering restricted tech flags.',
+      points: ['7 × listing images at 2000×2000px', '5 × A+ modules (970×600 / 970×300)', 'Technical schema diagrams included', 'Uploaded & approved first pass — zero rejections']
+    },
+    {
+      img: 'https://i.ibb.co/4nnfhZkV/prop3.jpg',
+      tag: 'Case 02 · Beauty & Skincare',
+      title: 'Red Light Therapy Face Mask',
+      desc: 'Premium brand story and A+ content for an FDA-cleared LED light therapy mask. Visuals balanced clinical efficacy with spa-grade luxury — while adhering strictly to Amazon medical-claim guidelines.',
+      points: ['8 × listing images at 2000×2000px', '6 × A+ modules (970×600 / 970×300)', 'Brand Story 4-card carousel', 'Uploaded & approved first pass — zero rejections']
+    }
+  ];
+  const lightbox = document.getElementById('lightbox');
+  function openCase(i) {
+    const c = CASES[i];
+    document.getElementById('lbImg').src = c.img;
+    document.getElementById('lbImg').alt = c.title;
+    document.getElementById('lbTag').textContent = c.tag;
+    document.getElementById('lbTitle').textContent = c.title;
+    document.getElementById('lbDesc').textContent = c.desc;
+    document.getElementById('lbPoints').innerHTML = c.points.map(p => `<div class="lightbox-point"><i class="fas fa-check"></i><span>${p}</span></div>`).join('');
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeCase() { lightbox.classList.remove('active'); document.body.style.overflow = ''; }
+  document.querySelectorAll('.case-study').forEach(article => {
+    const i = +article.dataset.case;
+    article.querySelector('.case-image-frame').addEventListener('click', () => openCase(i));
+    article.querySelector('.js-open-case').addEventListener('click', () => openCase(i));
+  });
+  document.getElementById('lightboxClose').addEventListener('click', closeCase);
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeCase(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeCase(); });
+
+  /* ---------- FAQ accordion ---------- */
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', () => {
+      const open = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(o => {
+        o.classList.remove('open');
+        o.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if (!open) {
+        item.classList.add('open');
+        const a = item.querySelector('.faq-a');
+        a.style.maxHeight = a.scrollHeight + 'px';
+      }
+    });
+  });
+
+  /* ---------- Mobile menu ---------- */
+  const burger = document.getElementById('navBurger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+    burger.querySelector('i').className = mobileMenu.classList.contains('open') ? 'fas fa-xmark' : 'fas fa-bars';
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    burger.querySelector('i').className = 'fas fa-bars';
+  }));
+</script>
+
+</body>
+</html>
