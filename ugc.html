@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Betsegaw Gobezie — UGC Creator & Viral Video Specialist</title>
+<meta name="description" content="UGC videos for TikTok, Reels & Shorts that stop the scroll. 1M+ views generated. Fitness & tech specialist. Hook-first, viral-native content that sells.">
+<meta property="og:title" content="Betsegaw Gobezie — UGC Creator">
+<meta property="og:description" content="1M+ views generated. I make UGC people can't scroll past.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23E8853A'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-size='38' font-style='italic' text-anchor='middle' fill='%2308080A'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  :root {
+    --bg: #08080A;
+    --bg-2: #0E0E12;
+    --bg-3: #141419;
+    --bg-card: #0F0F13;
+    --fg: #F5F3EF;
+    --fg-2: #E8E5DD;
+    --muted: #8A8780;
+    --muted-2: #5A5852;
+    --accent: #E8853A;
+    --accent-soft: #FFB870;
+    --accent-deep: #B85A1A;
+    --accent-glow: rgba(232, 133, 58, 0.4);
+    --green: #4ADE80;
+    --pink: #FF4D6D;
+    --line: rgba(245, 243, 239, 0.06);
+    --line-2: rgba(245, 243, 239, 0.12);
+    --line-3: rgba(245, 243, 239, 0.2);
+    --glass: rgba(245, 243, 239, 0.02);
+  }
+
+  * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  section[id] { scroll-margin-top: 110px; }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    cursor: none;
+  }
+
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+    opacity: 0.06; pointer-events: none; z-index: 100; mix-blend-mode: overlay;
+  }
+
+  h1, h2, h3, .display { font-family: 'Fraunces', serif; font-variation-settings: "opsz" 144, "SOFT" 50; letter-spacing: -0.03em; font-weight: 400; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  ::selection { background: var(--accent); color: var(--bg); }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: #2A2A30; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+  /* ---------- Preloader ---------- */
+  .preloader {
+    position: fixed; inset: 0; background: var(--bg); z-index: 600;
+    display: flex; align-items: center; justify-content: center;
+    transition: opacity .7s ease, visibility .7s ease;
+  }
+  .preloader.done { opacity: 0; visibility: hidden; pointer-events: none; }
+  .preloader-inner { text-align: center; }
+  .preloader-name { font-family: 'Fraunces', serif; font-size: clamp(28px, 5vw, 52px); letter-spacing: -.03em; margin-bottom: 30px; }
+  .preloader-name em { font-style: italic; font-weight: 300; color: var(--accent); }
+  .preloader-bar { width: 160px; height: 1px; background: var(--line-2); margin: 0 auto; overflow: hidden; }
+  .preloader-bar span { display: block; height: 100%; background: var(--accent); transform: translateX(-100%); animation: load 1s .1s cubic-bezier(.16,1,.3,1) forwards; }
+  @keyframes load { to { transform: translateX(0); } }
+
+  /* ---------- Custom cursor ---------- */
+  .cursor-ring {
+    position: fixed; width: 36px; height: 36px; border: 1px solid var(--line-3); border-radius: 50%;
+    pointer-events: none; z-index: 9999; mix-blend-mode: difference; transform: translate(-50%, -50%);
+    transition: width .3s, height .3s, border-color .3s, background .3s;
+  }
+  .cursor-dot {
+    position: fixed; width: 4px; height: 4px; background: var(--accent); border-radius: 50%;
+    pointer-events: none; z-index: 9999; transform: translate(-50%, -50%);
+  }
+  .cursor-ring.hover { width: 64px; height: 64px; border-color: var(--accent); background: rgba(232,133,58,.06); }
+  @media (hover: none), (max-width: 768px) {
+    body { cursor: auto; }
+    .cursor-ring, .cursor-dot { display: none; }
+  }
+
+  /* ---------- Scroll progress ---------- */
+  .scroll-progress { position: fixed; top: 0; left: 0; height: 2px; background: linear-gradient(90deg, var(--accent-deep), var(--accent)); z-index: 200; width: 0; }
+
+  /* ---------- Nav ---------- */
+  .nav {
+    position: fixed; top: 20px; left: 50%; transform: translateX(-50%); z-index: 80;
+    width: calc(100% - 40px); max-width: 1320px;
+    backdrop-filter: blur(24px) saturate(180%);
+    background: rgba(8, 8, 10, 0.6); border: 1px solid var(--line); border-radius: 14px;
+    padding: 14px 22px; display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-logo { font-family: 'Fraunces', serif; font-weight: 500; font-size: 26px; letter-spacing: -.02em; display: flex; align-items: center; gap: 10px; }
+  .nav-logo em, .footer-logo em { font-style: italic; font-weight: 300; color: var(--accent); font-variation-settings: 'opsz' 144, 'SOFT' 100; }
+  .nav-links { display: flex; gap: 28px; align-items: center; }
+  .nav-links a { color: var(--muted); font-size: 13px; font-weight: 500; text-decoration: none; transition: color .3s; position: relative; }
+  .nav-links a:hover { color: var(--fg); }
+  .nav-links a::after { content: ''; position: absolute; left: 0; bottom: -4px; width: 0; height: 1px; background: var(--accent); transition: width .3s; }
+  .nav-links a:hover::after { width: 100%; }
+  .nav-right { display: flex; align-items: center; gap: 14px; }
+  .nav-cta {
+    background: var(--fg); color: var(--bg); padding: 10px 18px; border-radius: 10px;
+    font-size: 13px; font-weight: 600; text-decoration: none; transition: all .3s;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .nav-cta:hover { background: var(--accent); transform: translateY(-1px); box-shadow: 0 10px 30px var(--accent-glow); }
+  .nav-burger {
+    display: none; background: none; border: 1px solid var(--line-2); color: var(--fg);
+    width: 40px; height: 40px; border-radius: 10px; font-size: 15px; align-items: center; justify-content: center;
+  }
+  .mobile-menu {
+    position: fixed; top: 88px; left: 20px; right: 20px; z-index: 79;
+    background: rgba(10,10,14,.96); backdrop-filter: blur(24px);
+    border: 1px solid var(--line-2); border-radius: 16px; padding: 12px;
+    display: none; flex-direction: column;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a { padding: 14px 16px; color: var(--fg-2); text-decoration: none; border-radius: 10px; font-size: 15px; font-weight: 500; }
+  .mobile-menu a:hover { background: var(--glass); color: var(--accent); }
+
+  /* ---------- Hero ---------- */
+  .hero { min-height: 100vh; padding: 140px 40px 80px; position: relative; overflow: hidden; display: flex; align-items: center; }
+  .hero-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+  .blob { position: absolute; border-radius: 50%; filter: blur(140px); opacity: 0.45; }
+  .blob-1 { width: 700px; height: 700px; background: var(--accent); top: -250px; right: -150px; animation: drift-1 24s infinite ease-in-out; }
+  .blob-2 { width: 500px; height: 500px; background: #5A2D0E; bottom: -150px; left: -100px; animation: drift-2 30s infinite ease-in-out; opacity: 0.6; }
+  @keyframes drift-1 { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(-80px,60px) scale(1.1); } }
+  @keyframes drift-2 { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(60px,-40px) scale(.95); } }
+  .grid-overlay {
+    position: absolute; inset: 0;
+    background-image: linear-gradient(rgba(245,243,239,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(245,243,239,.025) 1px, transparent 1px);
+    background-size: 100px 100px;
+    mask-image: radial-gradient(ellipse 80% 60% at center, black 20%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at center, black 20%, transparent 75%);
+  }
+  .hero-container {
+    max-width: 1320px; margin: 0 auto; width: 100%; position: relative; z-index: 2;
+    display: grid; grid-template-columns: 1.1fr auto; gap: 70px; align-items: center;
+  }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 10px; padding: 6px 14px 6px 8px;
+    background: rgba(232,133,58,.08); border: 1px solid rgba(232,133,58,.2); border-radius: 999px;
+    color: var(--accent-soft); font-size: 11px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase;
+    margin-bottom: 36px; font-family: 'JetBrains Mono', monospace;
+  }
+  .hero-eyebrow .dot { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 8px var(--accent); animation: pulse-status 2s infinite; }
+  @keyframes pulse-status { 0%,100% { opacity: 1; } 50% { opacity: .4; } }
+  .hero h1 { font-size: clamp(40px, 5.6vw, 88px); font-weight: 400; line-height: .98; letter-spacing: -.045em; margin-bottom: 32px; }
+  .hero h1 .italic-accent { font-style: italic; font-weight: 300; color: var(--accent); font-variation-settings: "opsz" 144, "SOFT" 100; }
+  .hero h1 .line { display: block; overflow: hidden; }
+  .hero h1 .line-inner { display: inline-block; transform: translateY(110%); animation: line-up 1s cubic-bezier(.16,1,.3,1) forwards; }
+  .hero h1 .line:nth-child(1) .line-inner { animation-delay: .85s; }
+  .hero h1 .line:nth-child(2) .line-inner { animation-delay: .95s; }
+  .hero h1 .line:nth-child(3) .line-inner { animation-delay: 1.05s; }
+  @keyframes line-up { to { transform: translateY(0); } }
+  .hero-sub { font-size: 18px; line-height: 1.6; color: var(--fg-2); margin-bottom: 40px; max-width: 540px; opacity: 0; animation: fade-in 1s 1.3s forwards; }
+  @keyframes fade-in { to { opacity: 1; } }
+  .cta-row { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 56px; opacity: 0; animation: fade-in 1s 1.45s forwards; }
+
+  .btn-primary {
+    background: var(--accent); color: var(--bg); padding: 16px 28px; border-radius: 12px;
+    font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px;
+    transition: all .3s cubic-bezier(.4,0,.2,1); border: none; position: relative; overflow: hidden;
+  }
+  .btn-primary::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,.25), transparent); transform: translateX(-100%); transition: transform .6s; }
+  .btn-primary:hover::before { transform: translateX(100%); }
+  .btn-primary:hover { background: var(--accent-soft); box-shadow: 0 16px 40px var(--accent-glow); }
+  .btn-ghost {
+    background: transparent; color: var(--fg); padding: 16px 28px; border-radius: 12px;
+    font-weight: 500; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px;
+    border: 1px solid var(--line-2); transition: all .3s;
+  }
+  .btn-ghost:hover { border-color: var(--fg); background: var(--glass); }
+
+  .trust-row { display: flex; gap: 32px; flex-wrap: wrap; padding-top: 32px; border-top: 1px solid var(--line); opacity: 0; animation: fade-in 1s 1.6s forwards; }
+  .trust-item { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--muted); font-family: 'JetBrains Mono', monospace; letter-spacing: .04em; }
+  .trust-item .icon { width: 16px; height: 16px; color: var(--accent); }
+
+  /* ---------- Hero video card (landscape) ---------- */
+  .hero-media-zone { opacity: 0; animation: fade-in 1.2s 1.5s forwards; position: relative; width: min(520px, 40vw); }
+  .hero-video-card {
+    border-radius: 20px; border: 1px solid var(--line-2); overflow: hidden;
+    background: #101014; box-shadow: 0 40px 100px rgba(0,0,0,.65), 0 0 0 8px rgba(245,243,239,.03);
+    transform: rotate(2deg); transition: transform .5s cubic-bezier(.34,1.56,.64,1);
+    animation: float-y 6s ease-in-out infinite;
+  }
+  .hero-video-card:hover { transform: rotate(0deg) scale(1.02); animation-play-state: paused; }
+  @keyframes float-y { 0%,100% { margin-top: 0; } 50% { margin-top: -12px; } }
+  .hvc-caption {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    padding: 12px 16px; border-top: 1px solid var(--line); background: rgba(8,8,10,.6);
+  }
+  .pc-handle { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--fg); font-weight: 600; white-space: nowrap; }
+  .pc-handle span { color: var(--accent); }
+  .hvc-caption-right { display: flex; align-items: center; gap: 8px; }
+  .pc-views { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: var(--accent-soft); background: rgba(232,133,58,.1); border: 1px solid rgba(232,133,58,.25); padding: 4px 8px; border-radius: 999px; white-space: nowrap; }
+
+  /* Engagement stat strip under the video */
+  .vs-strip {
+    display: flex; align-items: center; justify-content: space-around; gap: 8px;
+    padding: 10px 12px; border-top: 1px solid var(--line); background: rgba(8,8,10,.8);
+  }
+  .vs-item { display: flex; align-items: center; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--muted); }
+  .vs-item i { font-size: 11px; color: var(--fg-2); }
+  .vs-item.hot i { color: var(--pink); animation: heart-beat 1.6s ease-in-out infinite; }
+  @keyframes heart-beat { 0%,100% { transform: scale(1); } 12% { transform: scale(1.3); } 24% { transform: scale(1); } }
+
+  .views-badge {
+    position: absolute; top: -22px; left: -26px; z-index: 6;
+    background: var(--bg-2); border: 1px solid rgba(232,133,58,.4); border-radius: 12px;
+    padding: 10px 14px; box-shadow: 0 12px 30px rgba(0,0,0,.5);
+    display: flex; align-items: center; gap: 10px; transform: rotate(-4deg);
+    animation: float-y 5s ease-in-out infinite reverse;
+  }
+  .views-badge i { color: var(--accent); font-size: 14px; }
+  .vb-text { font-family: 'JetBrains Mono', monospace; }
+  .vb-num { font-size: 14px; font-weight: 600; color: var(--fg); line-height: 1; }
+  .vb-label { font-size: 8px; color: var(--muted); letter-spacing: .1em; text-transform: uppercase; margin-top: 3px; }
+
+  /* ---------- Marquee ---------- */
+  .marquee-section { padding: 32px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); overflow: hidden; background: rgba(8,8,10,.4); }
+  .marquee { display: flex; gap: 80px; animation: scroll-marquee 40s linear infinite; white-space: nowrap; width: max-content; }
+  .marquee-item {
+    font-family: 'Fraunces', serif; font-style: italic; font-weight: 300; font-size: 28px; letter-spacing: -.02em;
+    color: var(--muted); display: flex; align-items: center; gap: 80px; flex-shrink: 0;
+    font-variation-settings: "opsz" 144, "SOFT" 100;
+  }
+  .marquee-item::after { content: '✦'; color: var(--accent); font-size: 14px; font-style: normal; }
+  @keyframes scroll-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* ---------- Shared headers ---------- */
+  .stats-eyebrow {
+    color: var(--accent); font-size: 11px; font-weight: 600; letter-spacing: .12em;
+    font-family: 'JetBrains Mono', monospace; display: flex; align-items: center; gap: 12px; margin-bottom: 16px;
+  }
+  .stats-eyebrow::before { content: ''; width: 32px; height: 1px; background: var(--accent); }
+  .section-title { font-size: clamp(32px, 4.5vw, 60px); font-weight: 400; line-height: 1.05; max-width: 780px; letter-spacing: -.035em; }
+  .section-title em { font-style: italic; color: var(--accent); font-weight: 300; font-variation-settings: "opsz" 144, "SOFT" 100; }
+  .section-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 80px; flex-wrap: wrap; gap: 32px; }
+  .section-header p { color: var(--fg-2); font-size: 16px; line-height: 1.7; max-width: 460px; }
+
+  /* ---------- Stats ---------- */
+  .stats { padding: 120px 40px; max-width: 1320px; margin: 0 auto; }
+  .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; }
+  .stat-cell { background: var(--bg); padding: 40px 32px; transition: background .4s; }
+  .stat-cell:hover { background: var(--bg-2); }
+  .stat-number { font-family: 'Fraunces', serif; font-size: 64px; font-weight: 300; letter-spacing: -.04em; line-height: 1; margin-bottom: 12px; }
+  .stat-number .unit { color: var(--accent); font-style: italic; font-weight: 300; }
+  .stat-label { font-size: 12px; color: var(--muted); font-family: 'JetBrains Mono', monospace; letter-spacing: .04em; text-transform: uppercase; }
+
+  /* ---------- Work / video ---------- */
+  .work-section { padding: 120px 40px; max-width: 1320px; margin: 0 auto; }
+  .featured-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 70px; align-items: center; }
+  .video-frame {
+    border-radius: 20px; border: 1px solid var(--line-2); overflow: hidden;
+    background: #101014; box-shadow: 0 40px 100px rgba(0,0,0,.55); position: relative;
+  }
+  .case-info .case-meta-row {
+    display: flex; align-items: center; gap: 16px; margin-bottom: 28px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--muted);
+  }
+  .case-meta-row .divider { width: 24px; height: 1px; background: var(--line-2); }
+  .case-meta-row .category { color: var(--accent); }
+  .case-title { font-size: clamp(32px, 3.5vw, 48px); font-weight: 400; line-height: 1.05; letter-spacing: -.035em; margin-bottom: 24px; }
+  .case-title em { font-style: italic; color: var(--accent); font-weight: 300; font-variation-settings: "opsz" 144, "SOFT" 100; }
+  .case-desc { color: var(--fg-2); font-size: 16px; line-height: 1.7; margin-bottom: 36px; max-width: 480px; }
+  .case-deliverables { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 36px; }
+  .deliverable-item { border-top: 1px solid var(--line-2); padding-top: 14px; }
+  .deliverable-label { font-size: 10px; color: var(--muted-2); font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 6px; }
+  .deliverable-value { font-size: 15px; color: var(--fg); font-weight: 500; }
+
+  /* ---------- Niches ---------- */
+  .niches-section { padding: 120px 40px; max-width: 1320px; margin: 0 auto; }
+  .niches-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 24px; margin-top: 80px; }
+  .niche-card {
+    position: relative; border-radius: 24px; overflow: hidden; border: 1px solid var(--line);
+    min-height: 520px; display: flex; transition: all .4s;
+  }
+  .niche-card:hover { border-color: var(--line-2); transform: translateY(-4px); }
+
+  .niche-fitness img {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+    transition: transform 1.4s cubic-bezier(.16,1,.3,1);
+  }
+  .niche-fitness:hover img { transform: scale(1.05); }
+  .niche-fitness::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(8,8,10,0) 30%, rgba(8,8,10,.55) 60%, rgba(8,8,10,.95) 100%);
+  }
+  .niche-content {
+    position: relative; z-index: 2; align-self: flex-end; width: 100%;
+    padding: 140px 36px 36px;
+  }
+  .niche-icon {
+    width: 48px; height: 48px; border-radius: 14px; margin-bottom: 20px;
+    background: rgba(232,133,58,.12); border: 1px solid rgba(232,133,58,.3);
+    color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 19px;
+    backdrop-filter: blur(8px);
+  }
+  .niche-tag {
+    display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600;
+    letter-spacing: .1em; text-transform: uppercase; color: var(--accent-soft);
+    background: rgba(8,8,10,.5); border: 1px solid rgba(232,133,58,.3);
+    padding: 5px 12px; border-radius: 999px; margin-bottom: 16px; backdrop-filter: blur(8px);
+  }
+  .niche-title { font-size: clamp(28px, 3vw, 42px); font-weight: 400; letter-spacing: -.035em; line-height: 1.05; margin-bottom: 14px; }
+  .niche-title em { font-style: italic; color: var(--accent); font-weight: 300; }
+  .niche-desc { color: var(--fg-2); font-size: 15px; line-height: 1.7; max-width: 440px; }
+
+  .niche-tech {
+    background:
+      radial-gradient(ellipse 60% 45% at 85% 0%, rgba(232,133,58,.14), transparent 70%),
+      var(--bg-card);
+    align-items: stretch;
+  }
+  .nt-body { position: relative; z-index: 2; padding: 44px 40px; display: flex; flex-direction: column; }
+  .nt-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 32px; }
+  .nt-chip {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--fg-2); border: 1px solid var(--line-2); background: var(--glass);
+    padding: 6px 12px; border-radius: 999px;
+  }
+  .nt-caret {
+    margin-top: 24px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted);
+    letter-spacing: .06em;
+  }
+  .nt-caret b { color: var(--accent); font-weight: 600; animation: blink 1.1s steps(2) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  /* ---------- Why UGC ---------- */
+  .why-section { padding: 120px 40px; max-width: 1320px; margin: 0 auto; }
+  .value-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 80px; }
+  .value-card {
+    background: var(--bg-card); border: 1px solid var(--line); border-radius: 24px;
+    padding: 48px; position: relative; overflow: hidden; transition: all .4s;
+  }
+  .value-card:hover { border-color: var(--line-2); }
+  .value-card::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px; background: var(--accent); transition: width .6s ease; }
+  .value-card:hover::after { width: 100%; }
+  .vc-num { font-family: 'JetBrains Mono', monospace; font-size: 14px; color: var(--accent); letter-spacing: .1em; margin-bottom: 24px; }
+  .vc-title { font-family: 'Fraunces', serif; font-size: 28px; font-weight: 500; line-height: 1.2; margin-bottom: 16px; letter-spacing: -.02em; }
+  .vc-title em { font-style: italic; color: var(--accent); font-weight: 300; }
+  .vc-desc { color: var(--fg-2); font-size: 15px; line-height: 1.7; }
+  .vc-stat { margin-top: 20px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent); letter-spacing: .05em; display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(232,133,58,.25); background: rgba(232,133,58,.07); padding: 6px 12px; border-radius: 999px; }
+
+  /* ---------- Services ---------- */
+  .services-section { padding: 120px 40px; max-width: 1320px; margin: 0 auto; }
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 80px; }
+  .service-col {
+    background: var(--bg-card); border: 1px solid var(--line); border-radius: 24px; padding: 40px;
+    position: relative; overflow: hidden; transition: all .4s;
+  }
+  .service-col::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: 0; transition: opacity .4s; }
+  .service-col:hover { border-color: var(--line-2); transform: translateY(-4px); }
+  .service-col:hover::before { opacity: 1; }
+  .sc-num { font-family: 'Fraunces', serif; font-style: italic; font-weight: 300; font-size: 80px; line-height: 1; color: var(--accent); opacity: .15; position: absolute; top: 20px; right: 24px; }
+  .sc-icon-wrap { width: 52px; height: 52px; border-radius: 14px; border: 1px solid var(--line-2); background: var(--glass); display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 20px; margin-bottom: 28px; }
+  .sc-title { font-family: 'Fraunces', serif; font-size: 24px; font-weight: 500; margin-bottom: 6px; letter-spacing: -.02em; }
+  .sc-dim { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted); margin-bottom: 28px; letter-spacing: .04em; }
+  .sc-list { display: flex; flex-direction: column; gap: 14px; }
+  .sc-item { display: flex; align-items: flex-start; gap: 12px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+  .sc-item:last-child { border-bottom: none; }
+  .sc-check { width: 18px; height: 18px; border-radius: 50%; background: rgba(232,133,58,.1); color: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 8px; margin-top: 4px; }
+  .sc-item-text { font-size: 13px; color: var(--fg-2); line-height: 1.5; }
+  .sc-item-text strong { color: var(--fg); font-weight: 600; display: block; margin-bottom: 2px; }
+
+  /* ---------- Process ---------- */
+  .process-section { padding: 120px 40px; max-width: 1320px; margin: 0 auto; }
+  .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 80px; }
+  .process-step { border-top: 1px solid var(--line-2); padding-top: 28px; transition: border-color .4s; }
+  .process-step:hover { border-color: var(--accent); }
+  .ps-num { font-family: 'Fraunces', serif; font-style: italic; font-weight: 300; font-size: 44px; color: var(--accent); margin-bottom: 18px; }
+  .ps-title { font-family: 'Fraunces', serif; font-size: 20px; font-weight: 500; margin-bottom: 10px; letter-spacing: -.02em; }
+  .ps-desc { color: var(--fg-2); font-size: 14px; line-height: 1.65; margin-bottom: 16px; }
+  .ps-meta { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
+
+  /* ---------- Testimonials ---------- */
+  .testimonials-section { padding: 120px 40px; max-width: 1320px; margin: 0 auto; }
+  .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 80px; }
+  .testimonial-card { background: var(--bg-card); border: 1px solid var(--line); border-radius: 24px; padding: 40px; transition: all .4s; display: flex; flex-direction: column; }
+  .testimonial-card:hover { border-color: var(--line-2); transform: translateY(-3px); }
+  .testimonial-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+  .testimonial-stars { display: flex; gap: 3px; color: var(--accent); font-size: 12px; }
+  .t-metric {
+    background: rgba(232,133,58,.1); color: var(--accent); font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
+    padding: 5px 10px; border-radius: 999px; border: 1px solid rgba(232,133,58,.2); white-space: nowrap;
+  }
+  .testimonial-quote { font-family: 'Fraunces', serif; font-size: 18px; line-height: 1.55; color: var(--fg); margin-bottom: 32px; flex: 1; }
+  .testimonial-quote em { font-style: italic; color: var(--accent); font-weight: 300; }
+  .testimonial-author { display: flex; align-items: center; gap: 14px; padding-top: 24px; border-top: 1px solid var(--line); }
+  .author-avatar { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Fraunces', serif; font-weight: 600; font-size: 16px; color: var(--bg); flex-shrink: 0; }
+  .author-name { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
+  .author-meta { font-size: 11px; color: var(--muted); font-family: 'JetBrains Mono', monospace; }
+
+  /* ---------- FAQ ---------- */
+  .faq-section { padding: 120px 40px; max-width: 1320px; margin: 0 auto; }
+  .faq-wrap { max-width: 820px; margin: 80px auto 0; }
+  .faq-item { border-bottom: 1px solid var(--line); }
+  .faq-q {
+    width: 100%; background: none; border: none; color: var(--fg); display: flex; justify-content: space-between;
+    align-items: center; gap: 20px; padding: 26px 4px; font-family: 'Fraunces', serif; font-size: 19px;
+    font-weight: 500; text-align: left; letter-spacing: -.01em; cursor: none;
+  }
+  .faq-q i { color: var(--accent); transition: transform .4s; font-size: 13px; flex-shrink: 0; }
+  .faq-item.open .faq-q i { transform: rotate(45deg); }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height .5s cubic-bezier(.16,1,.3,1); }
+  .faq-a p { color: var(--fg-2); font-size: 15px; line-height: 1.7; padding: 0 4px 26px; max-width: 640px; }
+
+  /* ---------- Contact ---------- */
+  .contact-section { padding: 140px 40px 120px; max-width: 1320px; margin: 0 auto; }
+  .contact-container {
+    background: linear-gradient(180deg, rgba(232,133,58,.04), rgba(232,133,58,.01));
+    border: 1px solid var(--line-2); border-radius: 32px; overflow: hidden; position: relative;
+  }
+  .contact-glow { position: absolute; top: -150px; left: 50%; transform: translateX(-50%); width: 700px; height: 350px; background: radial-gradient(ellipse at center, var(--accent-glow), transparent 70%); pointer-events: none; }
+  .contact-inner { padding: 80px 60px; position: relative; z-index: 1; }
+  .contact-header { text-align: center; margin-bottom: 64px; }
+  .contact-eyebrow {
+    color: var(--accent); font-size: 11px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase;
+    font-family: 'JetBrains Mono', monospace; display: inline-flex; align-items: center; gap: 12px; margin-bottom: 24px;
+  }
+  .contact-eyebrow::before, .contact-eyebrow::after { content: ''; width: 32px; height: 1px; background: var(--accent); }
+  .contact-title { font-size: clamp(40px, 5vw, 72px); font-weight: 400; line-height: 1; letter-spacing: -.04em; margin-bottom: 24px; }
+  .contact-title em { font-style: italic; color: var(--accent); font-weight: 300; }
+  .contact-sub { color: var(--fg-2); font-size: 17px; max-width: 560px; margin: 0 auto; line-height: 1.6; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 60px; align-items: start; }
+  .contact-info { padding-right: 20px; }
+  .channel-link {
+    display: flex; align-items: center; gap: 16px; text-decoration: none;
+    background: var(--bg-card); border: 1px solid var(--line); border-radius: 16px;
+    padding: 20px 22px; margin-bottom: 14px; transition: all .3s;
+  }
+  .channel-link:hover { border-color: var(--accent); transform: translateX(6px); }
+  .channel-icon {
+    width: 44px; height: 44px; border-radius: 12px; background: rgba(232,133,58,.1);
+    color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0;
+  }
+  .channel-body { flex: 1; min-width: 0; }
+  .channel-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 4px; }
+  .channel-value { font-family: 'Fraunces', serif; font-size: 17px; color: var(--fg); font-weight: 500; word-break: break-all; }
+  .channel-link > i.fa-arrow-right { color: var(--muted); font-size: 12px; transition: all .3s; }
+  .channel-link:hover > i.fa-arrow-right { color: var(--accent); transform: translateX(4px); }
+  .contact-form { background: var(--bg-card); border: 1px solid var(--line); border-radius: 20px; padding: 40px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  .form-group { margin-bottom: 20px; }
+  .form-label { display: block; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 500; color: var(--muted); margin-bottom: 10px; letter-spacing: .05em; text-transform: uppercase; }
+  .form-input, .form-select, .form-textarea {
+    width: 100%; background: rgba(245,243,239,.02); border: 1px solid var(--line); border-radius: 10px;
+    padding: 14px 16px; color: var(--fg); font-size: 14px; font-family: inherit; transition: all .3s;
+  }
+  .form-input:focus, .form-select:focus, .form-textarea:focus { outline: none; border-color: var(--accent); background: rgba(232,133,58,.04); }
+  .form-textarea { resize: vertical; min-height: 110px; }
+  .form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238A8780' d='M6 8L2 4h8z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 16px center;
+  }
+  .form-submit {
+    width: 100%; background: var(--accent); color: var(--bg); border: none; padding: 18px; border-radius: 12px;
+    font-size: 14px; font-weight: 600; transition: all .3s; display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 8px; cursor: none;
+  }
+  .form-submit:hover { background: var(--accent-soft); transform: translateY(-1px); box-shadow: 0 12px 32px var(--accent-glow); }
+
+  /* ---------- Footer ---------- */
+  footer { border-top: 1px solid var(--line); padding: 100px 40px 40px; }
+  .footer-inner { max-width: 1320px; margin: 0 auto; }
+  .footer-cta { text-align: center; margin-bottom: 100px; }
+  .footer-giant { font-size: clamp(38px, 6.5vw, 92px); line-height: 1; letter-spacing: -.045em; margin-bottom: 40px; font-weight: 400; }
+  .footer-giant em { font-style: italic; font-weight: 300; color: var(--accent); }
+  .footer-bar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; border-top: 1px solid var(--line); padding-top: 40px; }
+  .footer-logo { font-family: 'Fraunces', serif; font-weight: 500; font-size: 26px; display: flex; align-items: center; gap: 10px; }
+  .footer-copy { font-size: 11px; color: var(--muted-2); font-family: 'JetBrains Mono', monospace; letter-spacing: .04em; }
+  .footer-social { display: flex; gap: 10px; }
+  .footer-social a { width: 38px; height: 38px; border-radius: 10px; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; color: var(--muted); text-decoration: none; transition: all .3s; }
+  .footer-social a:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-2px); }
+
+  /* ---------- Toast ---------- */
+  .toast {
+    position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%) translateY(140px);
+    background: var(--bg-2); border: 1px solid var(--accent); color: var(--fg); padding: 16px 24px;
+    border-radius: 14px; font-size: 14px; font-weight: 500; box-shadow: 0 16px 48px rgba(0,0,0,.6);
+    z-index: 400; transition: transform .5s cubic-bezier(.34,1.56,.64,1); display: flex; align-items: center; gap: 12px; white-space: nowrap;
+  }
+  .toast.show { transform: translateX(-50%) translateY(0); }
+  .toast i { color: var(--accent); }
+
+  /* ---------- Sticky mobile CTA ---------- */
+  .mobile-cta {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 90; display: none; gap: 10px;
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+    background: rgba(8,8,10,.88); backdrop-filter: blur(20px); border-top: 1px solid var(--line);
+  }
+  .mobile-cta a { flex: 1; text-align: center; padding: 14px; border-radius: 12px; font-size: 13px; font-weight: 600; text-decoration: none; }
+  .mc-work { border: 1px solid var(--line-2); color: var(--fg); }
+  .mc-hire { background: var(--accent); color: var(--bg); }
+
+  /* ---------- Reveal ---------- */
+  .reveal { opacity: 0; transform: translateY(40px); transition: opacity 1s cubic-bezier(.16,1,.3,1), transform 1s cubic-bezier(.16,1,.3,1); }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 1024px) {
+    .hero-container { grid-template-columns: 1fr; gap: 64px; }
+    .hero-media-zone { margin: 0 auto; width: min(560px, 100%); }
+    .views-badge { left: -10px; }
+    .stats-grid { grid-template-columns: 1fr; gap: 0; }
+    .stat-cell { border-bottom: 1px solid var(--line); }
+    .stat-cell:last-child { border-bottom: none; }
+    .featured-grid { grid-template-columns: 1fr; gap: 50px; }
+    .video-frame { max-width: 680px; margin: 0 auto; }
+    .niches-grid { grid-template-columns: 1fr; }
+    .niche-card { min-height: 460px; }
+    .services-grid, .testimonials-grid { grid-template-columns: 1fr; }
+    .value-grid { grid-template-columns: 1fr; }
+    .process-grid { grid-template-columns: 1fr 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .contact-info { padding-right: 0; }
+    .nav-links { display: none; }
+    .nav-burger { display: flex; }
+    .nav-logo { font-size: 20px; }
+  }
+  @media (max-width: 640px) {
+    .hero { padding: 120px 20px 60px; }
+    .hero-media-zone { width: 100%; }
+    .stats, .work-section, .niches-section, .why-section, .services-section, .process-section, .testimonials-section, .faq-section, .contact-section { padding: 80px 20px; }
+    .contact-inner { padding: 48px 24px; }
+    .form-row { grid-template-columns: 1fr; }
+    .stat-number { font-size: 48px; }
+    .case-deliverables { grid-template-columns: 1fr; }
+    .niche-content { padding: 120px 24px 24px; }
+    .nt-body { padding: 36px 28px; }
+    .vs-strip { flex-wrap: wrap; row-gap: 6px; }
+    .footer-bar { flex-direction: column; text-align: center; }
+    .process-grid { grid-template-columns: 1fr; }
+    footer { padding: 80px 20px 40px; }
+    body { padding-bottom: 76px; }
+    .mobile-cta { display: flex; }
+    .toast { bottom: 90px; max-width: calc(100% - 32px); white-space: normal; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-name">Betsegaw <em>Gobezie</em></div>
+    <div class="preloader-bar"><span></span></div>
+  </div>
+</div>
+
+<!-- Custom cursor -->
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-logo">Betsegaw <em>Gobezie</em></div>
+  <div class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#niches">Niches</a>
+    <a href="#why">Why UGC</a>
+    <a href="#services">Services</a>
+    <a href="#process">Process</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a class="nav-cta" href="#contact" data-magnetic>
+      Book a video
+      <i class="fas fa-arrow-right" style="font-size: 10px;"></i>
+    </a>
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#work">Work</a>
+  <a href="#niches">Niches</a>
+  <a href="#why">Why UGC</a>
+  <a href="#services">Services</a>
+  <a href="#process">Process</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="hero-container">
+    <div>
+      <span class="hero-eyebrow">
+        <span class="dot"></span>
+        UGC Creator · 1M+ views generated
+      </span>
+
+      <h1>
+        <span class="line"><span class="line-inner">I make UGC</span></span>
+        <span class="line"><span class="line-inner">people can't</span></span>
+        <span class="line"><span class="line-inner"><span class="italic-accent">scroll past.</span></span></span>
+      </h1>
+
+      <p class="hero-sub">
+        Vertical videos for TikTok, Reels & Shorts that feel native, get watched, and sell. Over a million views generated — because I don't chase trends, I decode why they go viral.
+      </p>
+
+      <div class="cta-row">
+        <a href="#contact" class="btn-primary" data-magnetic>
+          Book a video
+          <i class="fas fa-arrow-right" style="font-size: 11px;"></i>
+        </a>
+        <a href="#work" class="btn-ghost">
+          Watch the work
+          <i class="fas fa-play" style="font-size: 10px;"></i>
+        </a>
+      </div>
+
+      <div class="trust-row">
+        <div class="trust-item">
+          <i class="fas fa-fire icon"></i>
+          1M+ Total Views
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-mobile-screen icon"></i>
+          Native 9:16 · Every Platform
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-bolt icon"></i>
+          Hook-First Editing
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-clock icon"></i>
+          48–72hr Delivery
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating video card -->
+    <div class="hero-media-zone">
+      <div class="views-badge">
+        <i class="fas fa-play"></i>
+        <div class="vb-text">
+          <div class="vb-num">1M+</div>
+          <div class="vb-label">Views & counting</div>
+        </div>
+      </div>
+
+      <div class="hero-video-card">
+        <!-- ═══ YOUR JUMPSHARE VIDEO ═══ -->
+        <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+        <img src="https://i.ibb.co/Zy2kQXc/5859288204928815169.jpg" alt="5859288204928815169" border="0">
+        </div>
+        <!-- ═══ END VIDEO ═══ -->
+
+        <!-- Engagement strip (decorative — edit counts freely) -->
+        <div class="vs-strip">
+          <span class="vs-item hot"><i class="fas fa-heart"></i>48.2K</span>
+          <span class="vs-item"><i class="fas fa-comment"></i>1.2K</span>
+          <span class="vs-item"><i class="fas fa-bookmark"></i>6.8K</span>
+          <span class="vs-item"><i class="fas fa-share"></i>12.4K</span>
+        </div>
+
+        <div class="hvc-caption">
+          <span class="pc-handle">@<span>notbetsegaw</span></span>
+          <div class="hvc-caption-right">
+            <span class="pc-views">◉ sound on</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee -->
+<section class="marquee-section">
+  <div class="marquee">
+    <span class="marquee-item">TikTok</span>
+    <span class="marquee-item">Instagram Reels</span>
+    <span class="marquee-item">YouTube Shorts</span>
+    <span class="marquee-item">Fitness & Wellness</span>
+    <span class="marquee-item">Tech & Software</span>
+    <span class="marquee-item">Hook Writing</span>
+    <span class="marquee-item">Product Demos</span>
+    <span class="marquee-item">Trend Surfing</span>
+    <span class="marquee-item">TikTok</span>
+    <span class="marquee-item">Instagram Reels</span>
+    <span class="marquee-item">YouTube Shorts</span>
+    <span class="marquee-item">Fitness & Wellness</span>
+    <span class="marquee-item">Tech & Software</span>
+    <span class="marquee-item">Hook Writing</span>
+    <span class="marquee-item">Product Demos</span>
+    <span class="marquee-item">Trend Surfing</span>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="stats reveal">
+  <div class="section-header">
+    <div>
+      <div class="stats-eyebrow">#the-receipts</div>
+      <h2 class="section-title">One million views. <em>Zero luck.</em></h2>
+      <p style="color: var(--fg-2); font-size: 16px; line-height: 1.7; max-width: 560px; margin-top: 20px;">
+        Virality isn't random — it's hooks, retention, and pattern-matching what the algorithm rewards. I've spent hundreds of hours decoding it, and the numbers say it's working.
+      </p>
+    </div>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-cell">
+      <div class="stat-number"><span class="counter" data-count="1000000">0</span><span class="unit">+</span></div>
+      <div class="stat-label">Total Views Generated</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-number"><span class="counter" data-count="100">0</span><span class="unit">%</span></div>
+      <div class="stat-label">Native Vertical · Built for the Feed</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-number">48–72<span class="unit">hr</span></div>
+      <div class="stat-label">Standard Turnaround</div>
+    </div>
+  </div>
+</section>
+
+<!-- Work -->
+<section class="work-section" id="work">
+  <div class="section-header reveal">
+    <div>
+      <div class="stats-eyebrow">#the-work</div>
+      <h2 class="section-title" style="font-size: clamp(40px, 5.5vw, 80px);">Don't take my word for it. <em>Watch.</em></h2>
+    </div>
+    <p>Concepted, scripted, filmed, and edited by me — engineered hook-first for the feed. Turn the sound on.</p>
+  </div>
+
+  <!-- Featured video case -->
+  <div class="featured-grid reveal">
+    <div class="video-frame">
+      <!-- ═══ FEATURED VIDEO — same Jumpshare embed ═══ -->
+      <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+        <iframe src="https://jumpshare.com/embed/35zA6XRICoC4nPKXh5bt" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="Featured UGC video"></iframe>
+      </div>
+    </div>
+
+    <div class="case-info">
+      <div class="case-meta-row">
+        <span class="category">UGC · Featured</span>
+        <span class="divider"></span>
+        <span>TikTok · Reels · Shorts</span>
+      </div>
+      <h3 class="case-title">Anatomy of a <em>scroll-stopper.</em></h3>
+      <p class="case-desc">
+        This is what a native video looks like: a hook that earns the second second, pacing tuned for retention, captions that carry the message on mute, and a payoff that makes the share button irresistible. No corporate gloss — just content that behaves like content, not an ad.
+      </p>
+      <div class="case-deliverables">
+        <div class="deliverable-item">
+          <div class="deliverable-label">Format</div>
+          <div class="deliverable-value">9:16 & 16:9 · all ratios</div>
+        </div>
+        <div class="deliverable-item">
+          <div class="deliverable-label">Built For</div>
+          <div class="deliverable-value">TikTok · Reels · Shorts</div>
+        </div>
+        <div class="deliverable-item">
+          <div class="deliverable-label">Ad-Ready</div>
+          <div class="deliverable-value">Spark Ads compatible</div>
+        </div>
+        <div class="deliverable-item">
+          <div class="deliverable-label">Delivery</div>
+          <div class="deliverable-value">48–72 hours</div>
+        </div>
+      </div>
+      <a href="#contact" class="btn-primary" style="display: inline-flex;">
+        I want one like this
+        <i class="fas fa-arrow-right" style="font-size: 11px;"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Niches -->
+<section class="niches-section" id="niches">
+  <div class="section-header reveal">
+    <div>
+      <div class="stats-eyebrow">#my-niches</div>
+      <h2 class="section-title">Two worlds I <em>actually live in.</em></h2>
+    </div>
+    <p>Any product can go viral — but content hits different when the creator is the target audience. These are the two spaces where I'm not faking it: I'd be watching this content anyway.</p>
+  </div>
+
+  <div class="niches-grid reveal">
+    <!-- Fitness — with image -->
+    <div class="niche-card niche-fitness">
+      <img src="https://i.ibb.co/C3FzQRg2/5859288204928815175.jpg" alt="Fitness & Wellness UGC">
+      <div class="niche-content">
+        <div class="niche-icon"><i class="fas fa-dumbbell"></i></div>
+        <span class="niche-tag">Niche 01</span>
+        <h3 class="niche-title">Fitness & <em>Wellness</em></h3>
+        <p class="niche-desc">
+          Supplements, apparel, home-gym gear, fitness apps. Transformation is the most watchable hook on the internet — and gym content only works when it's real. I train, I test the products, and it shows on camera.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tech — text only -->
+    <div class="niche-card niche-tech">
+      <div class="nt-body">
+        <div class="niche-icon"><i class="fas fa-microchip"></i></div>
+        <span class="niche-tag">Niche 02</span>
+        <h3 class="niche-title">Tech & <em>Software</em></h3>
+        <p class="niche-desc">
+          This is the niche I'd work in for free. I genuinely love software — testing new apps, digging into features, and turning "technical and boring" into videos people actually finish. If it lives on a screen, I can make it trend.
+        </p>
+        <div class="nt-chips">
+          <span class="nt-chip">Apps</span>
+          <span class="nt-chip">SaaS</span>
+          <span class="nt-chip">Gadgets</span>
+          <span class="nt-chip">Dev Tools</span>
+        </div>
+        <div class="nt-caret"><b>&gt;</b> currently beta-testing 4 new apps_</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why UGC -->
+<section class="why-section" id="why">
+  <div class="section-header reveal">
+    <div>
+      <div class="stats-eyebrow">#why-ugc</div>
+      <h2 class="section-title">People don't hate ads. <em>They hate boring ones.</em></h2>
+    </div>
+    <p>Traditional ads get skipped in half a second. UGC gets watched to the end — because it doesn't feel like marketing. It feels like a recommendation from a friend.</p>
+  </div>
+
+  <div class="value-grid reveal">
+    <div class="value-card">
+      <div class="vc-num">/01</div>
+      <div class="vc-title">The first 2 seconds decide <em>everything.</em></div>
+      <p class="vc-desc">On TikTok, viewers decide whether to keep watching almost instantly. A weak hook kills the video before your product ever appears. I write and test hooks first — the edit serves the hook, not the other way around.</p>
+      <span class="vc-stat"><i class="fas fa-bolt"></i> Hook-first, every single video</span>
+    </div>
+    <div class="value-card">
+      <div class="vc-num">/02</div>
+      <div class="vc-title">Authenticity beats <em>production value.</em></div>
+      <p class="vc-desc">Consumers consistently trust creators more than brands — a phone-shot video of a real person using your product routinely outperforms polished studio ads. I make videos that look and feel like what your audience already chooses to watch.</p>
+      <span class="vc-stat"><i class="fas fa-user-check"></i> Native, not polished-to-death</span>
+    </div>
+    <div class="value-card">
+      <div class="vc-num">/03</div>
+      <div class="vc-title">The algorithm rewards <em>watch time.</em></div>
+      <p class="vc-desc">Every platform ranks content on one core signal: do people keep watching? That's why I edit for retention — pattern interrupts, pacing, loops, and payoffs — so the algorithm has every reason to push your video to the next million screens.</p>
+      <span class="vc-stat"><i class="fas fa-chart-line"></i> Engineered for retention</span>
+    </div>
+    <div class="value-card">
+      <div class="vc-num">/04</div>
+      <div class="vc-title">Trends have a shelf life of <em>days.</em></div>
+      <p class="vc-desc">A trend that's hot on Monday is dead by Friday. Working with an agency means catching the wave two weeks late. I move at feed speed — brief to posted-ready video in 48–72 hours, while the trend still has teeth.</p>
+      <span class="vc-stat"><i class="fas fa-clock"></i> Trend-responsive delivery</span>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="services-section" id="services">
+  <div class="section-header reveal">
+    <div>
+      <div class="stats-eyebrow">#what-i-do</div>
+      <h2 class="section-title">Concept to viral-ready. <em>All handled.</em></h2>
+    </div>
+    <p>One creator, full stack: research, scripting, filming, editing, and platform strategy. You send the product — I send back views.</p>
+  </div>
+
+  <div class="services-grid reveal">
+    <div class="service-col">
+      <div class="sc-num">01</div>
+      <div class="sc-icon-wrap"><i class="fas fa-video"></i></div>
+      <div class="sc-title">Create</div>
+      <div class="sc-dim">UGC Video Production</div>
+      <div class="sc-list">
+        <div class="sc-item">
+          <div class="sc-check"><i class="fas fa-check"></i></div>
+          <div class="sc-item-text"><strong>Product Demos & Reviews</strong>Natural, convincing first-person videos that show your product in real use.</div>
+        </div>
+        <div class="sc-item">
+          <div class="sc-check"><i class="fas fa-check"></i></div>
+          <div class="sc-item-text"><strong>Unboxings & First Reactions</strong>The format buyers trust most — raw, genuine, irresistible.</div>
+        </div>
+        <div class="sc-item">
+          <div class="sc-check"><i class="fas fa-check"></i></div>
+          <div class="sc-item-text"><strong>Testimonial-Style Videos</strong>"Why I switched" storytelling that sells without selling.</div>
+        </div>
+        <div class="sc-item">
+          <div class="sc-check"><i class="fas fa-check"></i></div>
+          <div class="sc-item-text"><strong>Trend & Skit Content</strong>Brand-relevant takes on what's blowing up right now.</div>
+        </div>
+        <div class="sc-item">
+          <div class="sc-check"><i class="fas fa-check"></i></div>
+          <div class="sc-item-text"><strong>On-Screen Captions</strong>Designed for sound-off scrolling — where most viewing happens.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-col">
+      <div class="sc-num">02</div>
+      <div class="sc-icon-wrap"><i class="fas fa-bullseye"></i></div>
+      <div class="sc-title">Convert</div>
+      <div class="sc-dim">Built to Perform</div>
+      <div class="sc-list">
+        <div class="sc-item">
+          <div class="sc-check"><i class="fas fa-check"></i></div>
+          <div class="sc-item-text"><strong>3 Hook Variations Per Video</strong>Test which opening stops the scroll — then scale the winner.</div>
+        </div>
+        <div class="sc-item">
+          <div class="sc-check"><i class="fas fa-check"></i></div>
+          <div class="sc-item-text"><strong>Spark Ads Ready</strong>Formatted and cleared to boost natively on TikTok.</div>
+        </div>
+        <div class="sc-item">
+          <div class="sc-check"><i class="fas fa-check"></i></div>
+          <div class="sc-item-text"><strong>Conversion-Led CTAs</strong>Endings engineered to drive clicks, not just compliments.</div>
+        </div>
+        <div class="sc-item">
+          <div class="sc-check"><i class="fas fa-check"></i></div>
+          <div class="sc-item-text"><strong>Platform-Native Editing</strong>Cuts, zooms, and text styles that match how each feed actually feels.</div>
+        </div>
+        <div class="sc-item">
+          <div class="sc-check"><i class="fas fa-check"></i></div>
+          <div class="sc-item-text"><strong>Multi-Version Delivery</strong>Cutdowns and variants for testing across campaigns.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-col">
+      <div class="sc-num">03</div>
+      <div class="sc-icon-wrap"><i class="fas fa-arrow-trend-up"></i></div>
+      <div class="sc-title">Grow</div>
+      <div class="sc-dim">Strategy & Iteration</div>
+      <div class="sc-list">
+        <div class="sc-item">
+          <div class="sc-check"><i class="fas fa-check"></i></div>
+          <div class="sc-item-text"><strong>Trend Research</strong>I live in the feeds so you don't have to — surfacing what's rising in your niche.</div>
+        </div>
+        <div class="sc-item">
+          <div class="sc-check"><i class="fas fa-check"></i></div>
+          <div class="sc-item-text"><strong>Competitor Content Teardown</strong>What's working in your space, what's saturated, where the gap is.</div>
+        </div>
+        <div class="sc-item">
+          <div class="sc-check"><i class="fas fa-check"></i></div>
+          <div class="sc-item-text"><strong>Hook & Script Writing</strong>Word-for-word scripts engineered around proven retention patterns.</div>
+        </div>
+        <div class="sc-item">
+          <div class="sc-check"><i class="fas fa-check"></i></div>
+          <div class="sc-item-text"><strong>Performance Notes</strong>Plain-English read on what worked and what to double down on.</div>
+        </div>
+        <div class="sc-item">
+          <div class="sc-check"><i class="fas fa-check"></i></div>
+          <div class="sc-item-text"><strong>Ongoing Content Partnerships</strong>Monthly packages for brands that want a constant feed presence.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="process-section" id="process">
+  <div class="section-header reveal">
+    <div>
+      <div class="stats-eyebrow">#how-it-works</div>
+      <h2 class="section-title">From brief to viral-ready <em>in days, not months.</em></h2>
+    </div>
+    <p>You'll always know what's happening and what's next. Four steps, zero mystery, fast turnaround.</p>
+  </div>
+  <div class="process-grid reveal">
+    <div class="process-step">
+      <div class="ps-num">01</div>
+      <div class="ps-title">Brief & Research</div>
+      <div class="ps-desc">You send the product, key benefits, and the vibe you want. I study your niche, competitors, and what's currently performing in your space.</div>
+      <div class="ps-meta">Day 1</div>
+    </div>
+    <div class="process-step">
+      <div class="ps-num">02</div>
+      <div class="ps-title">Hooks & Script</div>
+      <div class="ps-desc">You get 3 hook options and a full script built around a proven retention structure. You approve before I ever hit record.</div>
+      <div class="ps-meta">Day 1–2</div>
+    </div>
+    <div class="process-step">
+      <div class="ps-num">03</div>
+      <div class="ps-title">Film & Edit</div>
+      <div class="ps-desc">Filming, editing, captions, sound design, and trend-native touches — everything tuned for watch time and shares.</div>
+      <div class="ps-meta">Day 2–3</div>
+    </div>
+    <div class="process-step">
+      <div class="ps-num">04</div>
+      <div class="ps-title">Deliver & Iterate</div>
+      <div class="ps-desc">Final exports with hook variations, plus quick notes on posting and what to test next. Revisions until it's right.</div>
+      <div class="ps-meta">48–72hr total</div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section" id="testimonials">
+  <div class="section-header reveal">
+    <div>
+      <div class="stats-eyebrow">#client-words</div>
+      <h2 class="section-title">Brands don't remember the views. <em>They remember the sales.</em></h2>
+    </div>
+  </div>
+  <div class="testimonials-grid reveal">
+    <div class="testimonial-card">
+      <div class="testimonial-top">
+        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <span class="t-metric">+312K on one video</span>
+      </div>
+      <p class="testimonial-quote">"Our previous agency took three weeks per video. Betsegaw sent back <em>three hook variations in two days</em> — and one of them outperformed everything we'd ever run."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar" style="background: linear-gradient(135deg, #E8853A, #B85A1A);">DK</div>
+        <div>
+          <div class="author-name">Daniel K.</div>
+          <div class="author-meta">Founder · Fitness Brand</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-top">
+        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <span class="t-metric">Sold out in 48 hrs</span>
+      </div>
+      <p class="testimonial-quote">"The video didn't feel like an ad at all — that's exactly why it worked. Comments were people tagging friends. <em>We restocked twice that week.</em>"</p>
+      <div class="testimonial-author">
+        <div class="author-avatar" style="background: linear-gradient(135deg, #FFB870, #E8853A);">AR</div>
+        <div>
+          <div class="author-name">Amelia R.</div>
+          <div class="author-meta">Owner · Consumer App</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-top">
+        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <span class="t-metric">Concept in 48 hrs</span>
+      </div>
+      <p class="testimonial-quote">"I sent a messy brief and got back a script that understood my customer better than I did. <em>He just gets the internet.</em>"</p>
+      <div class="testimonial-author">
+        <div class="author-avatar" style="background: linear-gradient(135deg, #8A8780, #5A5852);">LS</div>
+        <div>
+          <div class="author-name">Lena S.</div>
+          <div class="author-meta">Marketing Lead · SaaS Startup</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="section-header reveal" style="justify-content: center; text-align: center;">
+    <div style="width: 100%;">
+      <div class="stats-eyebrow" style="justify-content: center;">#faq</div>
+      <h2 class="section-title" style="margin: 0 auto;">Everything brands ask <em>before booking.</em></h2>
+    </div>
+  </div>
+  <div class="faq-wrap reveal">
+    <div class="faq-item">
+      <button class="faq-q">What exactly is UGC?<i class="fas fa-plus"></i></button>
+      <div class="faq-a"><p>User-Generated Content: videos that look and feel like organic creator content — casual, native, trustworthy — but are made strategically for your brand. They work as organic posts AND as high-performing ad creatives. Think "recommendation from a friend," not "commercial."</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Do you only work in fitness and tech?<i class="fas fa-plus"></i></button>
+      <div class="faq-a"><p>No — I take on products from any category. Fitness and tech are simply the niches where I'm the target audience myself, so the content comes out sharper and faster because I already speak the language. If your product is great, the niche doesn't matter.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">How fast is the turnaround?<i class="fas fa-plus"></i></button>
+      <div class="faq-a"><p>48–72 hours from brief approval is standard. Because trends move fast, I also offer rush delivery when timing matters — mention it in your first message and I'll confirm availability.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Do you write the hooks and scripts?<i class="fas fa-plus"></i></button>
+      <div class="faq-a"><p>Yes — every video comes with 3 hook variations and a retention-structured script for your approval before filming. You never pay for a video built on a concept you didn't sign off on.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">What do you need from me to start?<i class="fas fa-plus"></i></button>
+      <div class="faq-a"><p>The product (shipped to me, or existing footage/assets if you have them), your key benefits and target audience, and any brand guidelines. If you're not sure about any of that — tell me your goal and I'll guide you through it.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Can I run these as paid ads?<i class="fas fa-plus"></i></button>
+      <div class="faq-a"><p>Absolutely — every video is delivered ad-ready and Spark Ads compatible on TikTok, plus usable across Reels and Shorts. UGC-style creatives consistently outperform polished studio ads in paid campaigns, which is exactly why big brands keep ordering them.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">How much does it cost?<i class="fas fa-plus"></i></button>
+      <div class="faq-a"><p>Every project gets a flat, all-in quote before any work begins — no hourly meters, no surprise fees. Message me with what you need and you'll have an exact number within 24 hours.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <div class="contact-glow"></div>
+    <div class="contact-inner">
+      <div class="contact-header reveal">
+        <div class="contact-eyebrow">Let's Make Your Next 1M Views</div>
+        <h2 class="contact-title">Got a product? <em>Let's make it famous.</em></h2>
+        <p class="contact-sub">Message me on either channel — or use the form. You'll hear back fast, with ideas already brewing.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a class="channel-link" href="https://t.me/notbetsegaw" target="_blank" rel="noopener noreferrer">
+            <div class="channel-icon"><i class="fab fa-telegram"></i></div>
+            <div class="channel-body">
+              <div class="channel-label">Telegram · Fastest reply</div>
+              <div class="channel-value">@notbetsegaw</div>
+            </div>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a class="channel-link" href="mailto:betsegawg7@gmail.com">
+            <div class="channel-icon"><i class="fas fa-envelope"></i></div>
+            <div class="channel-body">
+              <div class="channel-label">Email</div>
+              <div class="channel-value">betsegawg7@gmail.com</div>
+            </div>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <div class="channel-link" style="cursor: default;">
+            <div class="channel-icon" style="background: rgba(74,222,128,.08); color: var(--green);"><i class="fas fa-clock"></i></div>
+            <div class="channel-body">
+              <div class="channel-label">Response Time</div>
+              <div class="channel-value">Usually within a few hours</div>
+            </div>
+          </div>
+          <div class="channel-link" style="cursor: default;">
+            <div class="channel-icon" style="background: rgba(232,133,58,.1);"><i class="fas fa-fire"></i></div>
+            <div class="channel-body">
+              <div class="channel-label">Availability</div>
+              <div class="channel-value">Booking new projects now</div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal-delay-1" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="fName">Your Name</label>
+              <input class="form-input" type="text" id="fName" placeholder="Jane Doe" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="fContact">Email or Telegram</label>
+              <input class="form-input" type="text" id="fContact" placeholder="jane@brand.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fType">What do you need?</label>
+            <select class="form-select" id="fType">
+              <option>UGC video for my product</option>
+              <option>Fitness / wellness product video</option>
+              <option>Tech / software / app video</option>
+              <option>Multiple videos / monthly content</option>
+              <option>Ad creatives for a campaign</option>
+              <option>Not sure — need advice</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fMsg">About Your Product</label>
+            <textarea class="form-textarea" id="fMsg" placeholder="What's the product? Who's it for? Any deadline or trend you want to hit?"></textarea>
+          </div>
+          <button type="submit" class="form-submit">
+            <i class="fas fa-paper-plane"></i>
+            Send it — I'll reply fast
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-cta reveal">
+      <div class="footer-giant">Your next 1M views start<br>with one video. <em>Let's make it.</em></div>
+      <a class="btn-primary" href="https://t.me/notbetsegaw" target="_blank" rel="noopener noreferrer" data-magnetic style="font-size: 16px; padding: 20px 36px;">
+        <i class="fab fa-telegram"></i>
+        Message me on Telegram
+      </a>
+    </div>
+    <div class="footer-bar">
+      <div class="footer-logo">Betsegaw <em>Gobezie</em></div>
+      <div class="footer-copy">© 2026 · UGC CREATOR & VIDEO STRATEGIST · ALL RIGHTS RESERVED</div>
+      <div class="footer-social">
+        <a href="https://t.me/notbetsegaw" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+        <a href="mailto:betsegawg7@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://jumpshare.com/embed/35zA6XRICoC4nPKXh5bt" target="_blank" rel="noopener noreferrer" aria-label="Showreel"><i class="fas fa-clapperboard"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile CTA -->
+<div class="mobile-cta">
+  <a href="#work" class="mc-work">Watch the work</a>
+  <a href="https://t.me/notbetsegaw" target="_blank" rel="noopener noreferrer" class="mc-hire"><i class="fab fa-telegram"></i> Telegram me</a>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"><i class="fas fa-circle-check"></i><span id="toastMsg"></span></div>
+
+<script>
+  const EMAIL = 'betsegawg7@gmail.com';
+  const TELEGRAM = 'https://t.me/notbetsegaw';
+
+  /* ---------- Toast ---------- */
+  const toast = document.getElementById('toast');
+  const toastMsg = document.getElementById('toastMsg');
+  let toastTimer;
+  function showToast(msg, icon = 'fa-circle-check') {
+    toastMsg.textContent = msg;
+    toast.querySelector('i').className = 'fas ' + icon;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove('show'), 2600);
+  }
+
+  /* ---------- Form → composes an email ---------- */
+  document.getElementById('contactForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('fName').value.trim();
+    const contact = document.getElementById('fContact').value.trim();
+    const type = document.getElementById('fType').value;
+    const msg = document.getElementById('fMsg').value.trim();
+
+    const subject = encodeURIComponent(`UGC project inquiry — ${type} (${name})`);
+    const body = encodeURIComponent(
+      `Hi Betsegaw,\n\nName: ${name}\nContact: ${contact}\nProject type: ${type}\n\n${msg}\n\n— Sent from your portfolio`
+    );
+    showToast('Opening your email app — talk soon!', 'fa-paper-plane');
+    setTimeout(() => { window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`; }, 800);
+  });
+
+  /* ---------- Preloader ---------- */
+  const preloader = document.getElementById('preloader');
+  const hidePreloader = () => preloader.classList.add('done');
+  if (document.readyState === 'complete') setTimeout(hidePreloader, 700);
+  else window.addEventListener('load', () => setTimeout(hidePreloader, 700));
+  setTimeout(hidePreloader, 3000);
+
+  /* ---------- Custom cursor ---------- */
+  const ring = document.getElementById('cursorRing');
+  const dot = document.getElementById('cursorDot');
+  const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (finePointer) {
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    window.addEventListener('mousemove', (e) => {
+      mx = e.clientX; my = e.clientY;
+      dot.style.left = mx + 'px'; dot.style.top = my + 'px';
+    });
+    (function loop() {
+      rx += (mx - rx) * 0.16; ry += (my - ry) * 0.16;
+      ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+      requestAnimationFrame(loop);
+    })();
+    document.querySelectorAll('a, button, .hero-video-card, input, select, textarea, .faq-q, .video-frame, .niche-card').forEach(el => {
+      el.addEventListener('mouseenter', () => ring.classList.add('hover'));
+      el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
+    });
+    document.querySelectorAll('[data-magnetic]').forEach(btn => {
+      btn.addEventListener('mousemove', (e) => {
+        const r = btn.getBoundingClientRect();
+        const x = (e.clientX - r.left - r.width / 2) / r.width;
+        const y = (e.clientY - r.top - r.height / 2) / r.height;
+        btn.style.transform = `translate(${x * 8}px, ${y * 6}px)`;
+      });
+      btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
+    });
+  }
+
+  /* ---------- Scroll progress ---------- */
+  const progress = document.getElementById('scrollProgress');
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    progress.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100 + '%';
+  }, { passive: true });
+
+  /* ---------- Reveal on scroll ---------- */
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('visible'); revealObserver.unobserve(en.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  /* ---------- Animated counters (with comma formatting) ---------- */
+  const easeOut = t => 1 - Math.pow(1 - t, 3);
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      const el = en.target, target = +el.dataset.count, dur = 1600, start = performance.now();
+      (function tick(now) {
+        const p = Math.min((now - start) / dur, 1);
+        el.textContent = Math.round(target * easeOut(p)).toLocaleString('en-US');
+        if (p < 1) requestAnimationFrame(tick);
+      })(start);
+      counterObserver.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+  /* ---------- FAQ accordion ---------- */
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', () => {
+      const open = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(o => {
+        o.classList.remove('open');
+        o.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if (!open) {
+        item.classList.add('open');
+        const a = item.querySelector('.faq-a');
+        a.style.maxHeight = a.scrollHeight + 'px';
+      }
+    });
+  });
+
+  /* ---------- Mobile menu ---------- */
+  const burger = document.getElementById('navBurger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+    burger.querySelector('i').className = mobileMenu.classList.contains('open') ? 'fas fa-xmark' : 'fas fa-bars';
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    burger.querySelector('i').className = 'fas fa-bars';
+  }));
+</script>
+
+</body>
+</html>
